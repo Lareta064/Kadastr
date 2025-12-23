@@ -1,0 +1,95 @@
+@use '_var' as *;
+/*
+section.inner-promo(
+  style="background-image: image-set(url('./img/inner-promo.webp') 1x, url('./img/inner-promo@2x.webp') 2x);
+         -webkit-background-image: -webkit-image-set(url('./img/inner-promo.webp') 1x, url('./img/inner-promo@2x.webp') 2x);"
+)
+ @media (-webkit-min-device-pixel-ratio: 2), 
+(min-resolution: 192dpi) { 
+
+    .box{background:url('images/box-bg@2x.png') no-repeat top left;}
+}
+ */
+
+@font-face {
+    font-family: 'Nunito Sans';
+    src: url('../fonts/NunitoSans-Regular.woff2') format('woff2');
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Nunito Sans';
+    src: url('../fonts/NunitoSans-Medium.woff2') format('woff2');
+    font-weight: 500;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Nunito Sans';
+    src: url('../fonts/NunitoSans-SemiBold.woff2') format('woff2');
+    font-weight: 600;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Nunito Sans';
+    src: url('../fonts/NunitoSans-Bold.woff2') format('woff2');
+    font-weight: 700;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Inter';
+    src: url('../fonts/Inter-Regular.woff2') format('woff2');
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Inter';
+    src: url('../fonts/Inter-Medium.woff2') format('woff2');
+    font-weight: 500;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Inter';
+    src: url('../fonts/Inter-SemiBold.woff2') format('woff2');
+    font-weight: 600;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Inter';
+    src: url('../fonts/Inter-Bold.woff2') format('woff2');
+    font-weight: 700;
+    font-style: normal;
+}
+*, *:after, *:before {
+	box-sizing: border-box;
+	background-repeat: no-repeat;
+	background-position: center;
+	
+}
+
+html {scroll-behavior: smooth;}
+html,
+body {
+	margin: 0;
+	padding: 0;
+    font-size: 16px;
+	font-weight: 400;
+    font-family: var(--font-family);
+    
+	-webkit-font-smoothing: subpixel-antialiased;
+	-moz-osx-font-smoothing: auto;
+	
+}
+:root{
+    --siniy: #5272ff;
+	--siniy-dopolnitelnyy: #385bf4;
+	--zagolovok: #2a2a2d;
+	--osnovnoy-tekst: #54565c;
+	--vtorostepennyy-tekst: #82848e;
+	--kontur-inputov: #abaebc;
+	--kontur-blokov: #ebedf5;
+	--fon: #f6f8ff;
+	--belyy: #fff;
+	--oshibka: #e34343;
+    --font-family: 'Nunito Sans';
+    --second-family:'Inter';
+}

@@ -1,0 +1,71 @@
+include ../layouts/_mixins-links.pug
+block variables
+
+<!DOCTYPE html>
+html(lang="ru")
+	head
+		meta(charset="UTF-8")
+		meta(name="viewport", content="width=device-width, initial-scale=1.0")
+		meta(http-equiv="X-UA-Compatible", content="ie=edge")
+
+		//====убрать синий цвет у ссылок в сафари ========
+		meta(name="format-detection" content="telephone=no")
+		link(rel="stylesheet", href="../css/main.css")
+		title UI-KIT
+
+	body.body-dashboard
+		
+		include ui-navigation.pug
+
+		block content
+			.container-dashboard
+				h2.db-h2 Цветовая схема
+				.container-dashboard__content
+					ul.color-scheme
+						li
+							span.color-box(style="background-color:#5272ff;")
+							span.color-name --siniy: - #5272ff;
+						li
+							span.color-box(style="background-color:#385bf4;")
+							span.color-name --siniy-dopolnitelnyy: - #385bf4;
+						li
+							span.color-box(style="background-color:#2a2a2d;")
+							span.color-name --zagolovok: #2a2a2d;
+						li
+							span.color-box(style="background-color:#54565c;")
+							span.color-name --osnovnoy-tekst: #54565c;
+
+						li
+							span.color-box(style="background-color:#82848e;")
+							span.color-name --vtorostepennyy-tekst: #82848e;
+						li
+							span.color-box(style="background-color:#abaebc;")
+							span.color-name --kontur-inputov: #abaebc;
+
+						li
+							span.color-box(style="background-color:#ebedf5;")
+							span.color-name --kontur-blokov: #ebedf5;
+						li
+							span.color-box(style="background-color:#f6f8ff;")
+							span.color-name --fon: #f6f8ff;
+
+						li
+							span.color-box(style="background-color:#fff;")
+							span.color-name --belyy: #fff;
+
+						li
+							span.color-box(style="background-color:")
+							span.color-name --oshibka: #e34343;
+						
+
+	
+	
+	
+	
+	
+	
+	
+	
+					br
+					//- .dark-bg(style="height:100px;")
+					

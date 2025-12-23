@@ -1,0 +1,63 @@
+include ../layouts/_mixins-links.pug
+block variables
+
+<!DOCTYPE html>
+html(lang="ru")
+	head
+		meta(charset="UTF-8")
+		meta(name="viewport", content="width=device-width, initial-scale=1.0")
+		meta(http-equiv="X-UA-Compatible", content="ie=edge")
+
+		//====убрать синий цвет у ссылок в сафари ========
+		meta(name="format-detection" content="telephone=no")
+		link(rel="stylesheet", href="../css/main.css")
+		title UI-KIT
+
+	body.body-dashboard
+
+		include ui-navigation.pug
+
+		block content
+			.container-dashboard
+				h2.db-h2 Типографика
+
+				.container-dashboard__content
+					.h1 Title 24px
+					pre.
+						.h1 Title 24px
+					br
+					.h2 Title 20px
+					pre.
+						.h1 Title 24px
+					br
+					.h3 Title 18px / 500
+					pre.
+						.h3 Title 18px / 500
+					br
+					.h-18 Title 18px / 600
+					pre.
+						.h-18 Title 18px / 600
+					br
+					.h-20  Text 20px /500/28px
+					pre.
+						.h-20  Text 20px /500/28px
+					br
+					.fs-20 Font 20px
+					pre.
+						.fs-20 Font 20px
+					br
+					.fs-18 Font 18px
+					pre.
+						.fs-18 Font 18px
+					br
+					.fs-16 Font 16px
+					pre.
+						.fs-16 Font 16px
+					br
+					.fs-15 Font 15px
+					pre.
+						.fs-15 Font 15px
+					br
+					.fs-13 Font 13px
+					pre.
+						.fs-13 Font 13px

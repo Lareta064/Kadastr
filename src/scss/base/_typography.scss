@@ -1,0 +1,36 @@
+.h1, .h2, .h3{
+	margin: 0;
+	font-weight: 700;
+	font-family: var(--font-family);
+}
+.h1{
+	font-size: 24px;
+	line-height: 32px;
+	color: #000;
+}
+.h2{
+	font-size: 20px;
+	line-height: 26px;
+}
+.h3, .h-18,.fs-18{
+	font-weight: 500;
+	font-size: 18px;
+	line-height: 24px;
+}
+.h-20{
+	font-size: 20px;
+	font-weight: 600;
+	line-height: 28px;
+}
+.h-18{font-weight: 600;}
+.fs-15,.fs-16, .fs-18{
+	font-family: var(--second-family);
+	line-height: 167%;
+}
+.fs-18{font-weight: 400;}
+.fs-15{font-size: 15px;}
+.fs-16{font-size: 16px;}
+.fs-13{
+	font-size: 13px;
+	line-height: 15px;
+}
