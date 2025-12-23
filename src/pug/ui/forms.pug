@@ -21,176 +21,70 @@ html(lang="ru")
 		block content
 			.container-dashboard.custom-form(style="padding-top:80px;")
 				.form-item
-					input.form-inp(type="text" name="inp_name")
-					span.form-span °C
+					input.inp(type="text" name="inp_name")
 				pre.
 					.form-item
-						input.form-inp(type="text" name="inp_name")
-						span.form-span °C
-				br
-				.form-item-group
-					.form-label Название компании*
-					.form-item
-						input.form-inp(type="text" name="inp_name" data-required)
-						span.form-span °C
+						input.inp(type="text" name="inp_name")
+				hr
+				
+				.form-item.error
+					input.inp.error(type="text" name="inp_name")
 				pre.
-					.form-item-group
-						.form-label Название компании*
-						.form-item
-							input.form-inp(type="text" name="inp_name" data-required)
-							span.form-span °C
-				br
-				br
-				.form-two-cols
-					.form-item-group
-						.form-label Название компании*
-						.form-item
-							input.form-inp(type="text" name="inp_name" data-required)
-							span.form-span °C
-					.form-item-group
-						.form-label Очень длинный label, который может растянуться на две строки*
-						.form-item
-							input.form-inp(type="text" name="inp_name" data-required)
-							span.form-span °C
-				br
-				br
+					.form-item.error
+						input.inp.error(type="text" name="inp_name")
+				hr
+				
+				.form-item-slim
+					input.inp(type="text" name="inp_name")
+					.inp-placeholder Имя *
+				
+				pre.
+					form-item-slim
+						input.inp(type="text" name="inp_name")
+				hr
+				
+				.form-item.form-item--special
+					input.inp(type="text" name="inp_name")
+					.inp-placeholder Имя *
+				
+				pre.
+					.form-item.form-item--focus
+						input.inp(type="text" name="inp_name")
+						.inp-placeholder Имя *
+				
+				.form-item.form-item--special
+					textarea.textarea( name="message")
+					.inp-placeholder Message
+				
+				pre.
+					.form-item.form-item--focus
+						input.inp(type="text" name="inp_name")
+						.inp-placeholder Имя *
 
-				h4(style="margin-bottom:14px;") Кастомный чекбокс
-				.form-checkbox
-					label.form-checkbox-label
-						input(type="checkbox" name="check1")
-						span.fake-checkbox
-						span.form-checkbox-name Да
-					
-				pre.
-					.form-checkbox
-						label.form-checkbox-label
-							input(type="checkbox" name="check1")
-							span.fake-checkbox
-							span.form-checkbox-name Да
-				br
-				br
-				
-				h4(style="margin-bottom:14px;") Кастомный radio button
-				.form-radio
-					label.form-radio-label
-						input(type="radio" name="radio1")
-						span.fake-radio
-						span.form-radio-name Да
-				
-				.form-radio
-					label.form-radio-label
-						input(type="radio" name="radio1")
-						span.fake-radio
-						span.form-radio-name Нет
-					
-				pre.
-					.form-radio
-						label.form-radio-label
-							input(type="radio" name="radio1")
-							span.fake-radio
-							span.form-radio-name Нет
-				.dropdown
-					button.dropdown__button(type="button") Вакансия
-					
-					.dropdown__list
-						ul
-							li.dropdown__list-item(data-value="Текст1") Текст 1
-							li.dropdown__list-item(data-value="Текст2") Текст 2
-							li.dropdown__list-item(data-value="Текст3") Текст 3
-							li.dropdown__list-item(data-value="Текст4") Текст 4
-					
-					//==== в этот скрытый инпут в качестве value  выводится значение из data-value у.dropdown__list-item ===
-					input.dropdown__input-hidden(type="hidden", name="")
-		
-				br
-				.dropdown
-					button.dropdown__button(type="button" aria-haspopup="listbox" aria-expanded="false") 
-					.dropdown__list
-						ul
-							li.dropdown__list-item
-								label.form-radio-label
-									input(type="radio"  name=""  value="" checked )
-									span.form-radio-name 
-							li.dropdown__list-item
-								label.form-radio-label
-									input(type="radio"  name=""  value="" )
-									span.form-radio-name 
-				br
-				h4(style="margin-bottom:14px;") Соглашение с политикой в форме
-				.agree-block
-					.form-checkbox
-						label.checkbox-label
-							input.checkbox-inp(type="checkbox" name="name")
-							span.fake-checkbox
-							span.fs-14 Я согласен с #[a.a-gradient(href="#!") политикой конфиденциальности]
-				pre.
-					.agree-block
-						.form-checkbox
-							label.checkbox-label
-								input.checkbox-inp(type="checkbox" name="name")
-								span.fake-checkbox
-								span.fs-14 Я согласен с #[a.a-gradient(href="#!") политикой конфиденциальности]
-				
-				
-		script.
-			document.addEventListener("DOMContentLoaded", function () {
-				document.querySelector('#close-ui').addEventListener('click', ()=>{
-					document.body.classList.toggle('active')
-				});
-				
-				// DROP SELECT
-				document.querySelectorAll('.dropdown').forEach(function (dropDownWrapper) {
-					const dropDownBtn = dropDownWrapper.querySelector('.dropdown__button');
-					const dropDownList = dropDownWrapper.querySelector('.dropdown__list');
-					const dropDownListItems = dropDownList.querySelectorAll('.dropdown__list-item');
-					const dropDownInput = dropDownWrapper.querySelector('.dropdown__input-hidden');
-
-					// Клик по кнопке. Открыть/Закрыть select
-					dropDownBtn.addEventListener('click', function (e) {
-					
-						dropDownList.classList.toggle('dropdown__list--visible');
-						this.classList.toggle('dropdown__button--active');
-						dropDownWrapper.classList.toggle('dropdown-active');
-						
-					});
-					
-
-					// Выбор элемента списка. Запомнить выбранное значение. Закрыть дропдаун
-					dropDownListItems.forEach(function (listItem) {
-						
-						
-						listItem.addEventListener('click', function (e) {
-							e.stopPropagation();
-							const selectListItem = dropDownList.querySelector('.active');
-							if(selectListItem){
-								selectListItem.classList.remove('active');
-							}
-							this.classList.add('active');
-							dropDownBtn.innerText = this.innerText;
-							dropDownBtn.focus();
-							dropDownInput.value = this.dataset.value;
-							
-							dropDownList.classList.remove('dropdown__list--visible');
-							dropDownBtn.classList.remove('dropdown__button--active');
-							dropDownWrapper.classList.remove('dropdown-active');
+				script.
+					const specialFormsItems = document.querySelectorAll('.form-item--special');
+					function activatePlaceholder(element, parent){
+						element.addEventListener('focus',()=>{
+							parent.classList.add('form-item--focus');
 						});
-					});
-
-					// Клик снаружи дропдауна. Закрыть дропдаун
-					document.addEventListener('click', function (e) {
-						if (e.target !== dropDownBtn) {
-							dropDownBtn.classList.remove('dropdown__button--active');
-							dropDownList.classList.remove('dropdown__list--visible');
-						}
-					});
-
-					// Нажатие на Tab или Escape. Закрыть дропдаун
-					document.addEventListener('keydown', function (e) {
-						if (e.key === 'Tab' || e.key === 'Escape') {
-							dropDownBtn.classList.remove('dropdown__button--active');
-							dropDownList.classList.remove('dropdown__list--visible');
-						}
-					});
-				});
-			})
+						element.addEventListener('blur',()=>{
+							if( element.value !==''){
+								parent.classList.add('form-item--focus');
+							}else{
+								parent.classList.remove('form-item--focus');
+							}
+							
+						});
+					}
+					if(specialFormsItems.length>0){
+						specialFormsItems.forEach((item)=>{
+							const itemInput = item.querySelector('.inp');
+							const itemTextarea = item.querySelector('.textarea');
+							if(itemInput){
+								 activatePlaceholder(itemInput, item);
+							}
+							if(itemTextarea){
+								activatePlaceholder(itemTextarea, item);
+							}
+						});
+					}
