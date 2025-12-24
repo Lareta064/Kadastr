@@ -1,7 +1,15 @@
+.h-27{
+	font-family: var(--font-family);
+	font-weight: 700;
+	font-size: 27px;
+	line-height: 119%;
+	text-transform: uppercase;
+	color: var(--zagolovok);
+}
 .h1, .h2, .h3{
 	margin: 0;
 	font-weight: 700;
-	font-family: var(--font-family);
+	// font-family: var(--font-family);
 }
 .h1{
 	font-size: 24px;
@@ -29,8 +37,34 @@
 }
 .fs-18{font-weight: 400;}
 .fs-15{font-size: 15px;}
-.fs-16{font-size: 16px;}
+.fs-16{font-size: 16px;line-height: 1.5;}
 .fs-13{
 	font-size: 13px;
 	line-height: 15px;
 }
+.link{
+	
+	
+	color: var(--siniy);
+	&:hover, &:active{
+		color: var(--siniy-dopolnitelnyy);
+	}
+}
+.link-border{
+	display: inline;
+	
+	font-weight: 600;
+	
+	line-height: 162%;
+	letter-spacing: 0.02em;
+	text-transform: uppercase;
+	color: var(--siniy);
+	transition: .3s; 
+	border-bottom:1px solid currentColor;
+	&:hover, &:active{
+		color: var(--siniy-dopolnitelnyy);
+		border-bottom:0;
+	}
+}
+.txt-upper{text-transform: uppercase;}
+.txt-center{text-align: center;}

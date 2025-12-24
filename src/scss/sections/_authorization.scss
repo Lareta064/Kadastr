@@ -1,0 +1,52 @@
+.authorization-content{
+	background: #EDF0FF;
+	background: linear-gradient(180deg,rgba(237, 240, 255, 1) 0%, rgba(245, 247, 255, 1) 30%, rgba(255, 255, 255, 1) 100%);
+	padding-top: 36px;
+	padding-bottom: 20px;
+	height: 100vh;
+	overflow: hidden;
+	display: flex;
+	.container{
+		display: flex;
+		flex-direction: column;
+	}
+}
+.brand-logo{
+	width: 100px;
+	height: 100px;
+	margin: 0 auto;
+	flex-shrink: 0;
+	margin-bottom: 22px;
+}
+.authorization-form{
+	display: flex;
+	flex-direction: column;
+	flex:1;
+	.form-title{
+		min-height: 137px;
+	}
+	.h1{
+		margin-bottom: 10px;text-align: center;
+	}
+	.form-subtitle{
+		text-align: center;
+		color: var(--osnovnoy-tekst);
+		.h2{
+			margin-top: 20px;
+			margin-bottom:6px;
+		}
+	}
+   .inp{
+	  font-size: 20px;
+	  
+	  &::placeholder{color: var(--vtorostepennyy-tekst);}
+   }
+   .form-body{
+		flex-grow: 1;
+   }
+   #user-phone{display: block;}
+}
+.form-checkbox-group{
+	margin-top: 25px;
+	&>*+*{margin-top: 8px;}
+}

@@ -2,13 +2,17 @@
 @use "base/_var" as *;
 @use "base/_base";
 @use "base/_typography";
+@use "base/_buttons";
 @use "base/_form-grid";
 @use "base/_icons";
 @use "base/_form";
 @use "base/_form-customs";
 // @use "base/_dropdown";
 
-// @use "base/_test";
+@use "blocks/_nav-menus";
+@use "blocks/_header";
+@use "blocks/_service-card";
+@use "sections/_authorization";
 // @import "base/_grids";
 // @import "base/_typography";
 // @import "base/_icons";

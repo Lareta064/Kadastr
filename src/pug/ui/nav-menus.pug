@@ -1,0 +1,63 @@
+include ../layouts/_mixins-links.pug
+block variables
+
+<!DOCTYPE html>
+html(lang="ru")
+	head
+		meta(charset="UTF-8")
+		meta(name="viewport", content="width=device-width, initial-scale=1.0")
+		meta(http-equiv="X-UA-Compatible", content="ie=edge")
+
+		//====убрать синий цвет у ссылок в сафари ========
+		meta(name="format-detection" content="telephone=no")
+		link(rel="stylesheet", href="../css/main.css")
+		title UI-KIT
+
+	body.body-dashboard
+
+		include ui-navigation.pug
+
+		block content
+			.container-dashboard
+				h2 Header menu
+				header.header.header-primary
+					.container
+						.header-row
+							a.logo-group(href="#!")
+								svg.svg-logo-icon
+									use(href='../img/sprite.svg#svg-logo-icon')
+								svg.svg-logo-txt
+									use(href='../img/sprite.svg#svg-logo-txt')
+				
+							.header-title
+								.h-18 Оформление заявки
+								//- .fs-13 Подзаголовок
+				h2.db-h2 Bottom menu
+
+				.container-dashboard__content
+					.nav-menu-wrapper
+						nav.nav-menu
+							a.nav-menu-link(href="#!")
+								span.nav-menu-icon
+									svg.svg-home
+										use(href='../img/sprite.svg#svg-home')
+								span.nav-menu-name Главная
+							
+							a.nav-menu-link.active(href="#!")
+								span.nav-menu-icon
+									svg.svg-home
+										use(href='../img/sprite.svg#svg-doc')
+								span.nav-menu-name Услуги
+							
+							a.nav-menu-link(href="#!")
+								span.nav-menu-icon
+									span.icon-label 3
+									svg.svg-home
+										use(href='../img/sprite.svg#svg-cart')
+								span.nav-menu-name Корзина
+							
+							a.nav-menu-link(href="#!")
+								span.nav-menu-icon
+									svg.svg-home
+										use(href='../img/sprite.svg#svg-chat')
+								span.nav-menu-name Обращения

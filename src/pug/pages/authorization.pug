@@ -1,0 +1,35 @@
+extends ../layouts/layout.pug
+
+block content
+	.authorization-content
+		.container
+			.brand-logo
+				svg.logo-svg
+					use(href='./img/logo.svg#logo-svg')
+			
+			form.authorization-form
+				.form-title
+					.h1 Вход или регистрация
+					.form-subtitle
+						.h2 Введите номер телефона
+						.fs-16 Мы отправим на него код подтверждения
+						
+				.form-body
+					.form-item
+						input.inp.phone(type="text" name="phone" placeholder="+ 7 (000) 000 00 00")
+					
+					.form-checkbox-group
+						label.custom-item-label
+							input(type="checkbox" name="")
+							span.custom-checkbox
+							span.fs-16 Принимаю #[a.link(href="#!") пользовательское соглашение]
+
+						label.custom-item-label
+							input(type="checkbox" name="")
+							span.custom-checkbox
+							span.fs-16 Соглашаюсь с #[a.link(href="#!") политикой обработки персональных данных]
+				.form-button
+					button.btn-primary.disabled(type="submit") Продолжить
+						 
+	
+	-var title = "Авторизация";
