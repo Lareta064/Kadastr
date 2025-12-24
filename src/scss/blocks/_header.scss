@@ -1,0 +1,29 @@
+.logo-group{
+	display: flex;
+	width: 100px;
+	height: 28px;
+	column-gap:10px;
+	svg{color: white; height: 100%;}
+
+}
+.header.header-primary{
+	height: 60px;
+	background-color: var(--siniy);
+	color: white;
+	display: flex;
+	padding-block:11px;
+}
+.header-row{
+	display: flex;
+	align-items: center;
+	.logo-group{
+		padding-right: 15px;
+		border-right: 1px solid rgba(255,255,255, .15);
+	}
+	.header-title{
+		padding-left: 16px;	
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+	}
+}

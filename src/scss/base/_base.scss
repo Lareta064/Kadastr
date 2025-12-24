@@ -26,12 +26,14 @@ section.inner-promo(
 @font-face {
     font-family: 'Nunito Sans';
     src: url('../fonts/NunitoSans-SemiBold.woff2') format('woff2');
+    
     font-weight: 600;
     font-style: normal;
 }
 @font-face {
     font-family: 'Nunito Sans';
     src: url('../fonts/NunitoSans-Bold.woff2') format('woff2');
+   
     font-weight: 700;
     font-style: normal;
 }
@@ -67,18 +69,7 @@ section.inner-promo(
 }
 
 html {scroll-behavior: smooth;}
-html,
-body {
-	margin: 0;
-	padding: 0;
-    font-size: 16px;
-	font-weight: 400;
-    font-family: var(--font-family);
-    
-	-webkit-font-smoothing: subpixel-antialiased;
-	-moz-osx-font-smoothing: auto;
-	
-}
+
 :root{
     --siniy: #5272ff;
 	--siniy-dopolnitelnyy: #385bf4;
@@ -92,4 +83,25 @@ body {
 	--oshibka: #e34343;
     --font-family: 'Nunito Sans';
     --second-family:'Inter';
+
+    --container_Width: 430px;
+    --container_padding_inline: 16px;
+}
+html,
+body {
+	margin: 0;
+	padding: 0;
+    font-size: 16px;
+	font-weight: 400;
+    font-family: var(--font-family);
+    
+	-webkit-font-smoothing: subpixel-antialiased;
+	-moz-osx-font-smoothing: auto;
+	
+}
+.container{
+    width: 100%;
+    max-width: var(--container_Width);
+    padding-inline: var(--container_padding_inline);
+    margin: 0 auto;
 }
