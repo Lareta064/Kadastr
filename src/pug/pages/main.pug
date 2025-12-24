@@ -1,0 +1,22 @@
+extends ../layouts/layout.pug
+
+block content
+	
+	header.header.header-primary
+		.container
+			.header-row
+				a.logo-group(href="#!")
+					svg.svg-logo-icon
+						use(href='../img/sprite.svg#svg-logo-icon')
+					svg.svg-logo-txt
+						use(href='../img/sprite.svg#svg-logo-txt')
+	
+				.header-title
+					.h-18 Главная
+	main.main
+		.promo(style="background-image: -webkit-image-set(url('./img/bg.webp') 1x, url('./img/bg@2x.webp') 2x); background-image: image-set(url('./img/bg.webp') 1x, url('./img/bg@2x.webp') 2x);")
+			.promo-title
+				h1.h-27 Межевой план
+				.promo-subtitle Составим быстро и качественно
+			
+	-var title = "Главная";

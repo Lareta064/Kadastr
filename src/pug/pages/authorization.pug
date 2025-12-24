@@ -2,7 +2,7 @@ extends ../layouts/layout.pug
 
 block content
 	.authorization-content
-		.container
+		.container-small
 			.brand-logo
 				svg.logo-svg
 					use(href='./img/logo.svg#logo-svg')
@@ -16,7 +16,7 @@ block content
 						
 				.form-body
 					.form-item
-						input.inp.phone(type="text" name="phone" placeholder="+ 7 (000) 000 00 00")
+						input.inp(type="tel" name="phone" placeholder="+ 7 (000) 000 00 00")
 					
 					.form-checkbox-group
 						label.custom-item-label

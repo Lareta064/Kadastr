@@ -6,9 +6,10 @@
 	height: 100vh;
 	overflow: hidden;
 	display: flex;
-	.container{
+	.container-small{
 		display: flex;
 		flex-direction: column;
+		
 	}
 }
 .brand-logo{
@@ -23,13 +24,16 @@
 	flex-direction: column;
 	flex:1;
 	.form-title{
-		min-height: 137px;
+		min-height: 140px;
 	}
 	.h1{
 		margin-bottom: 10px;text-align: center;
 	}
 	.form-subtitle{
 		text-align: center;
+		display: flex;
+		flex-direction: column;
+		row-gap:10px;
 		color: var(--osnovnoy-tekst);
 		.h2{
 			margin-top: 20px;
@@ -45,8 +49,45 @@
 		flex-grow: 1;
    }
    #user-phone{display: block;}
+   .form-text-row{
+	margin-top: 36px;
+	text-align: center;
+   }
 }
 .form-checkbox-group{
 	margin-top: 25px;
 	&>*+*{margin-top: 8px;}
+}
+/**/
+.sms-input { position: relative; width:100%; }
+.sms-input__cells { display: flex; gap: 15px; }
+
+.sms-input__cell{
+  width: calc((100% - 60px) /5);
+  height: 60px;
+  border: 1px solid var(--kontur-inputov);
+  border-radius: 5px;
+  display: grid;
+  place-items: center;
+  font-size: 20px;
+  line-height: 1;
+  background: #fff;
+}
+
+.sms-input__cell.is-active {
+	border: 2px solid var(--siniy);
+	background: var(--fon);
+}
+
+.sms-input__input{
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  border: 0;
+  outline: 0;
+  color: var(--zagolovok);
+   font-weight: 500;
+  caret-color: transparent;
 }

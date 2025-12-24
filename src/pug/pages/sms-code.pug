@@ -2,7 +2,7 @@ extends ../layouts/layout.pug
 
 block content
 	.authorization-content
-		.container
+		.container-small
 			.brand-logo
 				svg.logo-svg
 					use(href='./img/logo.svg#logo-svg')
@@ -15,21 +15,20 @@ block content
 							span#user-phone +7 (123) 456 78 90
 						a.fs-15.link(href="#!") Изменить номер телефона
 				.form-body
-					.form-item
-						input.inp.phone(type="text" name="phone" placeholder="+ 7 (000) 000 00 00")
+					.sms-input#sms-input(data-len="5")
+						input.sms-input__input(
+							type="text"
+							inputmode="numeric"
+							maxlength="5"
+						)
+						.sms-input__cells(aria-hidden="true")
+							- for (let i = 0; i < 5; i++)
+								.sms-input__cell(data-i=i)
 					
-					.form-checkbox-group
-						label.custom-item-label
-							input(type="checkbox" name="")
-							span.custom-checkbox
-							span.fs-16 Принимаю #[a.link(href="#!") пользовательское соглашение]
-
-						label.custom-item-label
-							input(type="checkbox" name="")
-							span.custom-checkbox
-							span.fs-16 Соглашаюсь с #[a.link(href="#!") политикой обработки персональных данных]
-				.form-button
-					button.btn-primary.disabled(type="submit") Продолжить
+					.form-text-row
+						p.fs-16 Получить новый код можно через #[span 0:59]
+						a.fs-16.link(href="#!") Получить новый код
+				
 						 
 	
 	-var title = "Авторизация";

@@ -1,0 +1,26 @@
+extends ../layouts/layout.pug
+
+block content
+	.authorization-content
+		.container-small
+			.brand-logo
+				svg.logo-svg
+					use(href='./img/logo.svg#logo-svg')
+			
+			form.authorization-form
+				.form-title
+					.h1 Введите имя
+					.form-subtitle
+						.fs-16 Для завершения регистрации
+						
+				.form-body
+					.form-item
+						input.inp(type="text" name="name" )
+					
+					
+					
+				.form-button
+					button.btn-primary(type="submit") Зарегистрироваться
+						 
+	
+	-var title = "Авторизация";
