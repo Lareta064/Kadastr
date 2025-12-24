@@ -1,4 +1,4 @@
-svg{display: inline-block;}
+svg{display: inline-block;transition: .2s; }
 .logo-svg{
 	display: inline-block;
 	width: 100px;
@@ -27,4 +27,14 @@ svg{display: inline-block;}
 	width: 22px;
 	height: 22px;
 	color:#5272FF;
+}
+.svg-cross{
+	width: 16px;
+	height: 16px;
+	color: #82848E;
+	fill:transparent;
+	cursor:pointer;
+	&:hover{
+		color:var(--zagolovok);
+	}
 }
