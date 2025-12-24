@@ -21,19 +21,25 @@
 	padding: 16px;
 	box-shadow: 0 3px 10px 0 rgba(0, 0, 0, 0.05);
     background: var(--belyy);
+	display: flex;
+	flex-direction: column;
+	gap:10px;
 	.h-18{
 		font-weight: 500;
 		font-size: 18px;
 		line-height: 144%;
 		color: #222;
 	}
-	&__top{
+	&__header{
        display: flex;
 	   column-gap:20px;
+	   width: 100%;
 	}
-	&__icon{
+	&__body{width: 100%;}
+	img{
 		width: 46px;
 		height: 46px;
 		flex-shrink:0;
+		object-fit: contain
 	}
 }

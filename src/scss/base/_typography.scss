@@ -44,8 +44,7 @@
 }
 .link{
 	
-	font-size: 15px;
-	line-height: 140%;
+	
 	color: var(--siniy);
 	&:hover, &:active{
 		color: var(--siniy-dopolnitelnyy);
@@ -55,7 +54,7 @@
 	display: inline;
 	
 	font-weight: 600;
-	font-size: 13px;
+	
 	line-height: 162%;
 	letter-spacing: 0.02em;
 	text-transform: uppercase;
