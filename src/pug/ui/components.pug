@@ -1,0 +1,51 @@
+include ../layouts/_mixins-links.pug
+block variables
+
+<!DOCTYPE html>
+html(lang="ru")
+	head
+		meta(charset="UTF-8")
+		meta(name="viewport", content="width=device-width, initial-scale=1.0")
+		meta(http-equiv="X-UA-Compatible", content="ie=edge")
+
+		//====убрать синий цвет у ссылок в сафари ========
+		meta(name="format-detection" content="telephone=no")
+		link(rel="stylesheet", href="../css/main.css")
+		title UI-KIT
+
+	body.body-dashboard
+
+		include ui-navigation.pug
+
+		block content
+			.container-dashboard
+				h2.db-h2 Кнопки
+
+				.container-dashboard__content
+					.badge
+						span Акция!
+					pre.
+						.badge
+							span Акция!
+					br
+					.service-preview
+						.service-preview__img
+							img(src='../img/consultation.webp', srcset='../img/consultation@2x.webp 2x' width='36' height='36' loading='lazy' alt='img')
+						.service-preview__txt
+							.h3 Консультация по документам
+							p.fs-16 Профессиональная консультация кадастрового инженера по документам на недвижимость
+					pre.
+						.service-preview
+							.service-preview__img
+								img(src='../img/consultation.webp', srcset='../img/consultation@2x.webp 2x' width='36' height='36' loading='lazy' alt='img')
+							.service-preview__txt
+								.h3 Консультация по документам
+								p.fs-16 Профессиональная консультация кадастрового инженера по документам на недвижимость
+					br
+					.service-card
+						.service-card__top
+							img(src='../img/consultation.webp', srcset='../img/consultation@2x.webp 2x' width='36' height='36' loading='lazy' alt='img')
+
+						.service-preview__txt
+							.h3 Консультация по документам
+							p.fs-16 Профессиональная консультация кадастрового инженера по документам на недвижимость

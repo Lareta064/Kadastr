@@ -1,0 +1,39 @@
+.service-preview{
+	display: flex;
+	column-gap:16px;
+	padding:20px 16px;
+	background: var(--fon);
+	&__img{
+		width: 36px;
+		height: 36px;
+		flex-shrink: 0;
+	}
+	.h3{
+		color: var(--zagolovok);
+		margin-bottom: 6px;
+	}
+	p{color: var(--osnovnoy-tekst);}
+	
+}
+.service-card{
+	border: 1px solid var(--kontur-blokov);
+	border-radius: 10px;
+	padding: 16px;
+	box-shadow: 0 3px 10px 0 rgba(0, 0, 0, 0.05);
+    background: var(--belyy);
+	.h-18{
+		font-weight: 500;
+		font-size: 18px;
+		line-height: 144%;
+		color: #222;
+	}
+	&__top{
+       display: flex;
+	   column-gap:20px;
+	}
+	&__icon{
+		width: 46px;
+		height: 46px;
+		flex-shrink:0;
+	}
+}
