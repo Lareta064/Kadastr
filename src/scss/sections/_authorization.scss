@@ -30,6 +30,7 @@
 	}
 	.form-subtitle{
 		text-align: center;
+		color: var(--osnovnoy-tekst);
 		.h2{
 			margin-top: 20px;
 			margin-bottom:6px;
@@ -43,6 +44,7 @@
    .form-body{
 		flex-grow: 1;
    }
+   #user-phone{display: block;}
 }
 .form-checkbox-group{
 	margin-top: 25px;

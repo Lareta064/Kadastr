@@ -11,31 +11,13 @@ section.inner-promo(
 }
  */
 
+
 @font-face {
-    font-family: 'Nunito Sans';
-    src: url('../fonts/NunitoSans-Regular.woff2') format('woff2');
-    font-weight: 400;
-    font-style: normal;
-}
-@font-face {
-    font-family: 'Nunito Sans';
-    src: url('../fonts/NunitoSans-Medium.woff2') format('woff2');
-    font-weight: 500;
-    font-style: normal;
-}
-@font-face {
-    font-family: 'Nunito Sans';
-    src: url('../fonts/NunitoSans-SemiBold.woff2') format('woff2');
-    
-    font-weight: 600;
-    font-style: normal;
-}
-@font-face {
-    font-family: 'Nunito Sans';
-    src: url('../fonts/NunitoSans-Bold.woff2') format('woff2');
-   
-    font-weight: 700;
-    font-style: normal;
+  font-family: "Nunito Sans";
+  src: url("../fonts/NunitoSans.woff2") format("woff2");
+//   font-weight: 200 1000;
+  font-style: normal;
+  font-display: swap;
 }
 @font-face {
     font-family: 'Inter';
@@ -83,7 +65,7 @@ html {scroll-behavior: smooth;}
     --font-family: 'Nunito Sans';
     --second-family:'Inter';
 
-    --container_Width: 430px;
+    --container_Width: 390px;
     --container_padding_inline: 16px;
 }
 html,
@@ -93,6 +75,7 @@ body {
     font-size: 16px;
 	font-weight: 400;
     font-family: var(--font-family);
+    font-family: "Nunito Sans";
 	-webkit-font-smoothing: subpixel-antialiased;
 	-moz-osx-font-smoothing: auto;
 }
