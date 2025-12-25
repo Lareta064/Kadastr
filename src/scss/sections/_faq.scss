@@ -1,0 +1,59 @@
+.faq{
+	padding-top: 40px;
+	.h2{margin-bottom: 25px;}
+}
+
+.acordion-wrapper .acordion-button{
+	display: flex;
+	padding-block: 14px;
+	cursor:pointer;
+	display: flex;
+	align-items: center;
+	column-gap:16px;
+	
+}
+.acordion-item{
+	border-bottom: 1px solid #EBEDF5;
+}
+
+.acordion-wrapper .acordion-item__title{
+	flex-grow: 1;
+	font-family: var(--font-family);
+	font-weight: 600;
+	font-size: 18px;
+	line-height: 144%;
+	color: var(--zagolovok);
+	
+}
+.acordion-wrapper  .acordion-item__icon{
+	width: 25px;
+	height: 25px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-shrink: 0;
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg width='28' height='28' viewBox='0 0 28 28' fill='none' xmlns='http://www.w3.org/2000/svg'%3e%3cpath d='M24.0802 14.9333H3.92015C3.67261 14.9333 3.43522 14.835 3.26018 14.66C3.08515 14.4849 2.98682 14.2475 2.98682 14C2.98682 13.7525 3.08515 13.5151 3.26018 13.34C3.43522 13.165 3.67261 13.0667 3.92015 13.0667H24.0802C24.3277 13.0667 24.5651 13.165 24.7401 13.34C24.9152 13.5151 25.0135 13.7525 25.0135 14C25.0135 14.2475 24.9152 14.4849 24.7401 14.66C24.5651 14.835 24.3277 14.9333 24.0802 14.9333Z' fill='%235272ff'/%3e%3cpath d='M14.0002 25.0133C13.7527 25.0133 13.5153 24.915 13.3403 24.74C13.1652 24.5649 13.0669 24.3275 13.0669 24.08V3.92C13.0669 3.67246 13.1652 3.43506 13.3403 3.26003C13.5153 3.085 13.7527 2.98666 14.0002 2.98666C14.2478 2.98666 14.4852 3.085 14.6602 3.26003C14.8352 3.43506 14.9336 3.67246 14.9336 3.92V24.08C14.9336 24.3275 14.8352 24.5649 14.6602 24.74C14.4852 24.915 14.2478 25.0133 14.0002 25.0133Z' fill='%235272ff'/%3e%3c/svg%3e ");
+	background-size:30px 30px;
+	transition: .2s;
+}
+.acordion-wrapper  .acordion-body{
+	max-height:0;
+	overflow: hidden;
+	transition: height .3s, max-height 0.3s;
+	
+}
+.acordion-body__content{
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 150%;
+	padding-bottom: 14px;
+	color: var(--osnovnoy-tekst);
+	
+}
+.acordion-item.acordion-item--active {
+	
+
+	.acordion-item__icon{
+		background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg width='28' height='28' viewBox='0 0 28 28' fill='none' xmlns='http://www.w3.org/2000/svg'%3e%3cpath d='M24.0802 14.9333H3.92015C3.67261 14.9333 3.43522 14.835 3.26018 14.66C3.08515 14.4849 2.98682 14.2475 2.98682 14C2.98682 13.7525 3.08515 13.5151 3.26018 13.34C3.43522 13.165 3.67261 13.0667 3.92015 13.0667H24.0802C24.3277 13.0667 24.5651 13.165 24.7401 13.34C24.9152 13.5151 25.0135 13.7525 25.0135 14C25.0135 14.2475 24.9152 14.4849 24.7401 14.66C24.5651 14.835 24.3277 14.9333 24.0802 14.9333Z' fill='%2382848e'/%3e%3c/svg%3e");
+	}
+}

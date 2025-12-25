@@ -1,0 +1,69 @@
+.service-item{
+	padding-block:20px;
+	background: var(--fon);
+	
+	&-content{
+		display: flex;
+	   column-gap:16px;
+		width: 100%;
+		max-width: var(--container_Width);
+		padding-inline:var(--container_padding_inline);
+		margin: 0 auto;
+	}
+	&__img{
+		width: 36px;
+		height: 36px;
+		flex-shrink: 0;
+	}
+	.h3{
+		color: var(--zagolovok);
+		margin-bottom: 6px;
+		span{display: block;}
+	}
+	p{color: var(--osnovnoy-tekst);}
+	
+}
+.service-card{
+	border: 1px solid var(--kontur-blokov);
+	border-radius: 10px;
+	padding: 16px;
+	box-shadow: 0 3px 10px 0 rgba(0, 0, 0, 0.05);
+    background: var(--belyy);
+	display: flex;
+	flex-direction: column;
+	gap:10px;
+	.h-18{
+		font-weight: 500;
+		font-size: 18px;
+		line-height: 144%;
+		color: #222;
+		
+	}
+	&__header{
+       display: flex;
+	   column-gap:20px;
+	   width: 100%;
+	}
+	&__body{width: 100%;}
+	img{
+		width: 46px;
+		height: 46px;
+		flex-shrink:0;
+		object-fit: contain
+	}
+}
+
+
+.our-services{
+	padding-top:30px;
+	&>*+*{margin-top: 30px;}
+	.container{
+		&>*+*{margin-top: 30px;}
+	}
+	
+}
+.our-services-list{
+	background-color: #fff;
+	
+	&>*+*{margin-top: 1px;}
+}

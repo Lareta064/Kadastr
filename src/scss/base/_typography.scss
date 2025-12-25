@@ -42,25 +42,22 @@
 	font-size: 13px;
 	line-height: 15px;
 }
-.link{
-	
-	
-	color: var(--siniy);
-	&:hover, &:active{
-		color: var(--siniy-dopolnitelnyy);
-	}
-}
+
 .link-border{
 	display: inline;
-	
+	width: fit-content;
 	font-weight: 600;
-	
+	color: var(--siniy);
 	line-height: 162%;
 	letter-spacing: 0.02em;
 	text-transform: uppercase;
 	color: var(--siniy);
 	transition: .3s; 
 	border-bottom:1px solid currentColor;
+	
+}
+.link,.link-border{
+	color: var(--siniy);
 	&:hover, &:active{
 		color: var(--siniy-dopolnitelnyy);
 		border-bottom:0;

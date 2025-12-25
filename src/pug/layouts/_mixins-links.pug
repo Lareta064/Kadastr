@@ -1,3 +1,12 @@
-//- include  ../mixins/_statistic-card
+mixin service-item(img, title, txt, span)
+	.service-item
+		.service-item-content
+			.service-item__img
+				img(src='./img/'+img+'.webp', srcset='./img/'+img+'@2x.webp 2x' width='36' height='36' loading='lazy' alt='img')
+			.service-item__txt
+				.h3 !{title}
+					if span
+						span.fs-16 !{span}
+				p.fs-16 !{txt}
 
 
