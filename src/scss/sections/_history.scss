@@ -1,14 +1,19 @@
 .history-item{
-	display: flex;
 	padding-block:15px;
-	column-gap:15px;
-	border-bottom:1px solid #EBEDF5 ;
+	border-bottom:1px solid #EBEDF5;
+	&__head{
+		display: flex;column-gap:15px;
+	}
 	.fs-16{font-weight: 600;}
 	&__info{
 		flex:1;
 		&>*+*{margin-top: 6px;}
 	}
-	
+	&__customer{
+		margin-top: 10px;
+		padding-left: 15px;
+		border-left: 1px solid var(--siniy);
+	}
 }
 .label-light,
 .label-inter,
