@@ -19,58 +19,46 @@ block content
 				.bid-content-header
 					.fs-15.date-box 01.12.2025
 					.label-light В обработке 
+		
+		section.messages-content
+			.container.gap-15
+				.message-wrapper.admin-message
+					.message-item
+						.fs-13 Александ
+						.fs-15 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+					.message-info 
+						span 12:03 
+						span 01.12.25
 				
-				.history-list
-					//single
-					.history-item
-						.history-item__head
-							.history-item__info
-								.fs-13.txt-muted 01.12.2025
-								.fs-16 #[span.txt-muted #] 123456789
-							.label-light В обработке
-					//single
-					.history-item
-						.history-item__head
-							.history-item__info
-								.fs-13.txt-muted 11.11.2025
-								.fs-16 #[span.txt-muted #] 987654321
-							.label-inter Выезд на объект
-					//single
-					.history-item
-						.history-item__head
-							.history-item__info
-								.fs-13.txt-muted 05.08.2025
-								.fs-16 #[span.txt-muted #] 456456
-							.label-inter Согласование
-					//single
-					.history-item
-						.history-item__head
-							.history-item__info
-								.fs-13.txt-muted 07.03.2025
-								.fs-16 #[span.txt-muted #] 7867567
-							.label-inter Формирование документов
-					//single
-					.history-item
-						.history-item__head
-							.history-item__info
-								.fs-13.txt-muted 07.03.2025
-								.fs-16 #[span.txt-muted #] 345345356
-							.label-inter Подача в&nbsp;Росреестр
-					//single
-					.history-item
-						.history-item__head
-							.history-item__info
-								.fs-13.txt-muted 01.03.2025
-								.fs-16 #[span.txt-muted #] 67854
-							.label-done Закрытие
-					//single
-					.history-item
-						.history-item__head
-							.history-item__info
-								.fs-13.txt-muted 01.03.2025
-								.fs-16 #[span.txt-muted #] 67854
-							.label-failure Отказ
-
+				.message-wrapper
+					.message-item
+						.fs-13 Александ
+						.fs-15 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+					.message-info 
+						span 12:03 
+						span 01.12.25
+				.message-wrapper
+					.message-item
+						.fs-13 Александ
+						.fs-15 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+					.message-info 
+						span 12:03 
+						span 01.12.25
+				.message-wrapper.admin-message
+					.message-item
+						.fs-13 Александ
+						.fs-15 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+					.message-info 
+						span 12:03 
+						span 01.12.25
+			
+			.send-message-wrapper
+				.send-message.container
+					.form-item-slim
+						input.inp(type="text" placeholder="Сообщение")
+					button(type="button").btn-send
+		
+	
 	include ../sections/_footer-menu
 	
 	-var title = "Одна услуга";
