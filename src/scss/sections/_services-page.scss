@@ -1,0 +1,42 @@
+.service-card{
+	border: 1px solid var(--kontur-blokov);
+	border-radius: 10px;
+	padding: 16px;
+	box-shadow: 0 3px 10px 0 rgba(0, 0, 0, 0.05);
+    background: var(--belyy);
+	display: flex;
+	flex-direction: column;
+	gap:10px;
+	transition: .3s; 
+	.h-18{
+		font-weight: 500;
+		font-size: 18px;
+		line-height: 144%;
+		color: #222;
+		transition: .3s; 
+		span{display: block;}
+		
+	}
+	&__header{
+       display: flex;
+	   column-gap:20px;
+	   align-items: center;
+	   width: 100%;
+	}
+	&__body{width: 100%;}
+	img{
+		width: 46px;
+		height: 46px;
+		flex-shrink:0;
+		object-fit: contain
+	}
+	&:hover{
+		background: #e9edff;
+		.h-18{color: var(--siniy);}
+	}
+}
+.services{
+	.container{
+		&>*+*{margin-top: 8px;}
+	}
+}

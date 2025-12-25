@@ -1,0 +1,39 @@
+.service-link{
+	position: relative;
+	padding-top: 30px;
+	background-color: #fff;
+	&__icon{
+		width: 66px;
+		height: 66px;
+		background-color: #fff;
+		position: absolute;
+		left: 50%;
+		transform: translateX(-50%);
+		top:0;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		padding: 12px;
+	}
+	&__body{
+		padding: 20px;
+		padding-top: 42px;
+		border: 2px solid var(--siniy);
+		border-radius: 10px;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		gap:20px;
+		text-align: center;
+	}
+}
+.price-item{
+	font-weight: 700;
+	font-size: 26px;
+	line-height: 131%;
+	text-align: right;
+	color: var(--zagolovok);
+}
+.about-service .container>*+*{
+	margin-top: 40px;
+}

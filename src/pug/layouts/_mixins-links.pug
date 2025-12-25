@@ -9,4 +9,15 @@ mixin service-item(img, title, txt, span)
 						span.fs-16 !{span}
 				p.fs-16 !{txt}
 
+mixin service-card(img, title, txt, span)
+	a(href="single-service.html").service-card
+		.service-card__header
+			img(src='./img/'+img+'.webp', srcset='./img/'+img+'@2x.webp 2x' width='46' height='46' loading='lazy' alt='img')
+			.h-18 !{title}
+				if span
+					span.fs-16 !{span}
+		if txt
+			.service-card__body
+				p.fs-16 !{txt}
+
 

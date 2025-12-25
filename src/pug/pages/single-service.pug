@@ -1,0 +1,33 @@
+extends ../layouts/layout.pug
+
+block content
+	
+	header.header.header-primary
+		.container
+			.header-row
+				a.logo-group(href="#!")
+					svg.svg-logo-icon
+						use(href='../img/sprite.svg#svg-logo-icon')
+					svg.svg-logo-txt
+						use(href='../img/sprite.svg#svg-logo-txt')
+	
+				.header-title
+					.h-18 Технический паспорт
+					.fs-13 (для ресурсоснабжающих организаций)
+	main.main-inner
+		section.about-service
+			.container
+				.service-link
+					.service-link__icon
+						img(src='./img/tehnical-passport.webp', srcset='./img/tehnical-passport@2x.webp 2x' width='42' height='42' loading='lazy' alt='img')
+					.service-link__body
+						.h-18 Технический паспорт является основным документом технического учета, формируемым по результатам технической инвентаризации объекта недвижимости
+						.price-item от 10 500 ₽
+						a.btn-primary(href="#!") Перейти
+
+				.about-service-text.fs-16
+					p Он содержит подробную информацию о состоянии и характеристиках здания или помещения, включая размер и площадь объекта, материал стен и перекрытий, сведения о коммуникациях (электричество, водоснабжение, отопление), описание конструктивных элементов объекта недвижимости, назначение объекта, размеры и площадь внутренних помещений, их расположение в здании и относительно друг друга, а также степень износа.
+							 
+	include ../sections/_footer-menu
+	
+	-var title = "Одна услуга";
