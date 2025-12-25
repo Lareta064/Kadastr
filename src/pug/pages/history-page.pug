@@ -1,0 +1,71 @@
+extends ../layouts/layout.pug
+
+block content
+	
+	header.header.header-primary
+		.container
+			a.logo-group(href="index.html")
+				svg.svg-logo-icon
+					use(href='../img/sprite.svg#svg-logo-icon')
+				svg.svg-logo-txt
+					use(href='../img/sprite.svg#svg-logo-txt')
+
+			.header-title
+				.h-18 История обращений
+				
+	main.main-inner
+		section.history-content
+			.container
+				.search-wrapper
+					form(action="" method="method")
+						.form-item-slim
+							input.inp(type="text" name="inp_name")
+							button.search-button(type="submit")
+				.history-list
+					//single
+					.history-item
+						.history-item__info
+							.fs-13.txt-muted 01.12.2025
+							.fs-16 #[span.txt-muted #] 123456789
+								
+						.label-light В обработке
+					//single
+					.history-item
+						.history-item__info
+							.fs-13.txt-muted 11.11.2025
+							.fs-16 #[span.txt-muted #] 987654321
+						.label-inter Выезд на объект
+					//single
+					.history-item
+						.history-item__info
+							.fs-13.txt-muted 05.08.2025
+							.fs-16 #[span.txt-muted #] 456456
+						.label-inter Согласование
+					//single
+					.history-item
+						.history-item__info
+							.fs-13.txt-muted 07.03.2025
+							.fs-16 #[span.txt-muted #] 7867567
+						.label-inter Формирование документов
+					//single
+					.history-item
+						.history-item__info
+							.fs-13.txt-muted 07.03.2025
+							.fs-16 #[span.txt-muted #] 345345356
+						.label-inter Подача в&nbsp;Росреестр
+					//single
+					.history-item
+						.history-item__info
+							.fs-13.txt-muted 01.03.2025
+							.fs-16 #[span.txt-muted #] 67854
+						.label-done Закрытие
+					//single
+					.history-item
+						.history-item__info
+							.fs-13.txt-muted 01.03.2025
+							.fs-16 #[span.txt-muted #] 67854
+						.label-failure Отказ
+
+	include ../sections/_footer-menu
+	
+	-var title = "Одна услуга";

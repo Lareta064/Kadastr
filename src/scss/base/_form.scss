@@ -70,3 +70,21 @@
 .form-item.form-item--special{
 	.inp{padding-top: 15px;}
 }
+
+.search-button{
+	position: absolute;
+	right: 20px;
+	top: 50%;
+	transform: translateY(-50%);
+}
+.search-button{
+	z-index: 2;
+	width: 24px;
+	height: 24px;
+	display: block;
+	flex-shrink: 0;
+	cursor:pointer;
+	background-repeat: no-repeat;
+	background-position: center;;
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3e%3cpath d='M21 20.9999L16.889 16.8889M19.1111 11.5556C19.1111 15.7284 15.7284 19.1111 11.5556 19.1111C7.38274 19.1111 4 15.7284 4 11.5556C4 7.38274 7.38274 4 11.5556 4C15.7284 4 19.1111 7.38274 19.1111 11.5556Z' stroke='%235272FF' stroke-width='2' stroke-linecap='round' stroke-linejoin='round' /%3e%3c/svg%3e");
+}
