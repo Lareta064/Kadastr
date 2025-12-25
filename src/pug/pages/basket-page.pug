@@ -1,0 +1,76 @@
+extends ../layouts/layout.pug
+
+block content
+	
+	header.header.header-primary
+		.container
+			
+			a.logo-group(href="index.html")
+				svg.svg-logo-icon
+					use(href='../img/sprite.svg#svg-logo-icon')
+				svg.svg-logo-txt
+					use(href='../img/sprite.svg#svg-logo-txt')
+
+			.header-title
+				.h-18 Корзина
+	main.main-inner
+		section.basket-content
+			.container
+				.basket-list
+					//single card
+					.basket-card
+						.basket-card-header.basket-row
+							.h-16 Технический паспорт (для ресурсоснабжающих организаций)
+							.price-item 10 500 ₽
+							.basket-card-btn
+								button(type="button" aria-label="clean").btn-clean
+									
+						.basket-card-body
+							.fs-15.txt-muted Дополнительные услуги
+							.basket-card-addition
+								.basket-row
+									.fs-15 Проведение геодезических и топографических съемок
+									.price-item 3 000 ₽
+									.basket-card-btn
+										button(type="button" aria-label="clean").btn-clean
+								.basket-row
+									.fs-15 Регистрация прав собственности и сделок в Росреестре
+									.price-item 2 500 ₽
+									.basket-card-btn
+										button(type="button" aria-label="clean").btn-clean
+								.basket-row
+									.fs-15 Проведение геодезических и топографических съемок
+									.price-item 3 000 ₽
+									.basket-card-btn
+										button(type="button" aria-label="clean").btn-clean
+												
+					//single card
+					.basket-card
+						.basket-card-header.basket-row
+							.h-16 Межевой план
+							.price-item 9 900 ₽
+							.basket-card-btn
+								button(type="button" aria-label="clean").btn-clean
+									
+						.basket-card-body
+							.fs-15.txt-muted Дополнительные услуги
+							.basket-card-addition
+								.basket-row
+									.fs-15 Подготовка документов для регистрации прав собственности
+									.price-item 2 500 ₽
+									.basket-card-btn
+										button(type="button" aria-label="clean").btn-clean
+					//single card
+					.basket-card
+						.basket-card-header.basket-row
+							.h-16 Консультация по документам
+							.price-item 3 000 ₽
+							.basket-card-btn
+								button(type="button" aria-label="clean").btn-clean
+				.basket-total
+					.total-cost
+						span.fs-18 Цена
+						span.h-27 10 500 ₽
+	include ../sections/_footer-menu
+	
+	-var title = "Услуги";

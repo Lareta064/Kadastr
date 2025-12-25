@@ -29,15 +29,18 @@
 	&__text{
 		gap:5px;
 	}
+	
 }
+.price-item.fs-26{font-size: 26px;}
 .price-item{
 	font-weight: 700;
-	font-size: 26px;
+	font-size: 18px;
 	line-height: 131%;
 	text-align: right;
 	color: var(--zagolovok);
 	white-space: nowrap;
 }
+
 .about-service-text{padding-top: 10px;}
 .about-service .container>*+*{
 	margin-top: 30px;
@@ -67,7 +70,7 @@
 		padding-right: 16px;
 	}
 }
-.service-set__cost{
+.total-cost{
 	padding-top: 16px;
 	padding-bottom: 16px;
 	display: flex;
@@ -77,11 +80,7 @@
 	border-bottom:1px solid #EBEDF5;
 	.h-27{
 		margin-left: auto;
-		font-weight: 700;
-		font-size: 26px;
-		line-height: 131%;
 		text-align: right;
-		color: var(--zagolovok);
 	}
 	.fs-18{
 		font-weight: 500;
@@ -105,8 +104,7 @@
 		flex-shrink: 0;
 		min-width: 77px;
 		text-align: right;
-		font-weight: 700;
-		font-size: 18px;
+		
 	}
 	.custom-item-label{
 		flex:1;

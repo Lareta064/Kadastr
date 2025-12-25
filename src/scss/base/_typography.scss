@@ -31,8 +31,14 @@
 	line-height: 28px;
 }
 .h-18{font-weight: 600;}
+.h-16{
+	font-weight: 700;
+	font-size: 16px;
+	line-height: 150%;
+	color: var(--zagolovok);
+}
 .fs-15,.fs-16, .fs-18{
-	// font-family: var(--second-family);
+	
 	line-height: 167%;
 }
 .fs-18{font-weight: 400;}
@@ -42,6 +48,7 @@
 	font-size: 13px;
 	line-height: 15px;
 }
+.txt-muted{color: var(--vtorostepennyy-tekst);}
 .mb-25{margin-bottom: 25px;}
 
 .link,.link-border{
