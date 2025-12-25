@@ -42,7 +42,18 @@
 	font-size: 13px;
 	line-height: 15px;
 }
+.mb-25{margin-bottom: 25px;}
 
+.link,.link-border{
+	background: none;
+	border:0;
+	padding: 0;
+	color: var(--siniy);
+	&:hover, &:active{
+		color: var(--siniy-dopolnitelnyy);
+		border-bottom:0;
+	}
+}
 .link-border{
 	display: inline;
 	width: fit-content;
@@ -54,14 +65,11 @@
 	color: var(--siniy);
 	transition: .3s; 
 	border-bottom:1px solid currentColor;
-	
-}
-.link,.link-border{
-	color: var(--siniy);
 	&:hover, &:active{
 		color: var(--siniy-dopolnitelnyy);
-		border-bottom:0;
+		border-bottom: 1px solid transparent;
 	}
+	
 }
 .txt-upper{text-transform: uppercase;}
 .txt-center{text-align: center;}

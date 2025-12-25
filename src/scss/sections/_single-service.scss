@@ -26,6 +26,9 @@
 		gap:20px;
 		text-align: center;
 	}
+	&__text{
+		gap:5px;
+	}
 }
 .price-item{
 	font-weight: 700;
@@ -33,7 +36,134 @@
 	line-height: 131%;
 	text-align: right;
 	color: var(--zagolovok);
+	white-space: nowrap;
 }
+.about-service-text{padding-top: 10px;}
 .about-service .container>*+*{
-	margin-top: 40px;
+	margin-top: 30px;
+}
+.gallery{padding-top: 10px;}
+.gallery-swiper{
+	width: calc(50% + 50vw);
+	overflow: hidden;
+	overflow-x:auto;
+	scrollbar-width: none;
+	&::-webkit-scrollbar{display: none;}
+	&__content{
+		display: flex;
+		column-gap: 16px;
+	}
+	
+	.gallery-item{width: 275px;}
+	.gallery-item img{
+		width: 275px;
+		height: 203px;
+		flex-shrink: 0;
+		border-radius: 10px;
+		object-fit:cover;
+	}
+	.gallery-item:last-child{
+		width: calc(275px + 16px);
+		padding-right: 16px;
+	}
+}
+.service-set__cost{
+	padding-top: 16px;
+	padding-bottom: 16px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	border-top:1px solid #EBEDF5;
+	border-bottom:1px solid #EBEDF5;
+	.h-27{
+		margin-left: auto;
+		font-weight: 700;
+		font-size: 26px;
+		line-height: 131%;
+		text-align: right;
+		color: var(--zagolovok);
+	}
+	.fs-18{
+		font-weight: 500;
+	}
+}
+.checkbox-list{
+	&__title{
+		font-weight: 500;
+		font-size: 18px;
+		line-height: 144%;
+		color: var(--zagolovok);
+		margin-bottom: 20px;
+	}
+	&-item{
+		display: flex;
+		align-items: flex-start;
+		column-gap:15px;
+
+	}
+	.price-item{
+		flex-shrink: 0;
+		min-width: 77px;
+		text-align: right;
+		font-weight: 700;
+		font-size: 18px;
+	}
+	.custom-item-label{
+		flex:1;
+	}
+}
+.checkbox-list__group{
+	display: grid;
+	grid-template-columns: 1fr;
+	gap:16px;
+}
+.button-wrapper{
+	background: var(--fon);
+	padding-block:20px;
+	margin-top: 30px;
+}
+/*popup-wrapper*/
+.popup-wrapper{
+	position: fixed;
+	z-index: 15;
+	inset:0;
+	background: rgba(0,0,0, .5);
+	display: flex;
+	align-items: flex-end;
+	justify-content: center;
+	transform: translateY(110%);
+	transition: .2s ease-in;
+	opacity: 0;
+	&.is-open{transform: translateY(0); opacity: 1;} 
+}
+.popup-content{
+	width: 100%;
+	position: relative;
+	background-color: #fff;
+	padding: 20px;
+	box-shadow: 0 3px 10px 0 rgba(0, 0, 0, 0.05);
+	border-radius: 10px;
+	.btn-cross{
+		position: absolute;
+		top: 16px;
+		right: 16px;
+		z-index: 2;
+	}
+}
+.service-link.service-link--popup{
+	
+	.service-link__icon{
+		position: relative;
+		inset:0;
+		transform: unset;
+		width: 46px;
+		height: 46px;
+		padding: 0;
+		margin: 0 auto;
+		margin-bottom: 20px;
+	}
+	.service-link__body{
+		padding: 0;
+		border:0;
+	}
 }

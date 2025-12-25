@@ -12,18 +12,18 @@
 	color: white;
 	display: flex;
 	padding-block:3px;
-}
-.header-row{
-	display: flex;
-	align-items: center;
-	.logo-group{
-		padding-right: 15px;
-		border-right: 1px solid rgba(255,255,255, .15);
-	}
-	.header-title{
-		padding-left: 16px;	
+	.container{
 		display: flex;
-		flex-direction: column;
-		justify-content: center;
+		align-items: center;
+		.logo-group{
+			padding-right: 15px;
+			border-right: 1px solid rgba(255,255,255, .15);
+		}
+		.header-title{
+			padding-left: 16px;	
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+		}
 	}
 }
