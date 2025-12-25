@@ -10,3 +10,8 @@
 	.basket-card-body,.basket-card-addition>*+*{margin-top: 11px;}
 	.basket-card-body .price-item{font-weight: 600;}
 }
+.basket-content{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
