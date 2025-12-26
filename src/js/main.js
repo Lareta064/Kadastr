@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', function(){
-
+	const bodyEl= document.body;
 	/*custom placeholder */
 	const specialFormsItems = document.querySelectorAll('.form-item--special');
 	function activatePlaceholder(element, parent){
@@ -30,6 +30,7 @@ document.addEventListener('DOMContentLoaded', function(){
 					let popupData = popup.dataset.popup;
 					if(popupData == btnData){
 						popup.classList.add('is-open');
+						bodyEl.classList.add('lock');
 					}
 				});	
 			});
@@ -39,10 +40,28 @@ document.addEventListener('DOMContentLoaded', function(){
 			 popupClose.forEach((closeBtn)=>{
 				closeBtn.addEventListener('click',()=>{
 					popup.classList.remove('is-open');
+					bodyEl.classList.remove('lock');
 				});
 			 });
 		});
-
+	}
+	/*open states list */
+	const openStateListBtn = document.querySelector('#open-states-list');
+	if(openStateListBtn){
+		const statesList = document.querySelector('#states-list');
+		if(statesList){
+			openStateListBtn.addEventListener('click', ()=>{
+				if(openStateListBtn.classList.contains('active')){
+					openStateListBtn.classList.remove('active');
+					statesList.style.height = 0;
+					bodyEl.classList.remove('lock');
+				}else{
+					openStateListBtn.classList.add('active');
+					statesList.style.height = statesList.scrollHeight +'px';
+					bodyEl.classList.add('lock');
+				}
+			})
+		}
 	}
 })
 

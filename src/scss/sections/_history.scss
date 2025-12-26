@@ -15,10 +15,7 @@
 		border-left: 1px solid var(--siniy);
 	}
 }
-.label-light,
-.label-inter,
-.label-done,
-.label-failure{
+.label{
 	flex-shrink: 0;
 	flex-wrap: wrap;
 	background: #eef1fe;
@@ -34,6 +31,7 @@
 	font-size: 14px;
 	line-height: 1.21;
 	color: var(--zagolovok);
+	svg{margin-left: auto;transition: .2s; }
 }
 .label-inter{background: #e3e8ff;}
 .label-done{background: #e0f0e4;}

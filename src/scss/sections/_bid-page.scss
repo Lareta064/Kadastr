@@ -12,17 +12,48 @@
 		background-position: left;
 		
 	}
-	.label-light{
+	.label{
 		width: 165px;
 	}
 }
-.bid{
-	.bid-content{
-		padding-block: 25px;
-	}
-	
-}
 
+.bid-content{
+	padding-block: 25px;
+}
+.bid-state-block{
+	position: relative;
+	.states-list{
+		position: absolute;
+		z-index: 5;
+		right: 0;
+		top:calc(100% + 9px);
+		transition: .3s;
+		height: 0;
+		overflow: hidden;
+	}
+	.label.active{
+		svg{transform: rotate(180deg);}
+	}
+}	
+
+.drop-list{
+	width: 330px;
+	box-shadow: 0 3px 10px 0 rgba(0, 0, 0, 0.05);
+	border: 1px solid var(--kontur-inputov);
+	border-radius: 10px;
+	overflow: hidden;
+	background: var(--belyy);
+	&-item{
+		font-weight: 600;
+		font-size: 16px;
+		line-height: 1.50;
+		text-align: center;
+		color: var(--zagolovok);
+		padding:15px;
+		border-bottom:1px solid #EBEDF5;
+	}
+	&-item:last-child{border-bottom:0}
+}
 .bid-item,.bid-item-additional,.bid-additional-list{
   display: grid;
   grid-template-columns: 1fr;

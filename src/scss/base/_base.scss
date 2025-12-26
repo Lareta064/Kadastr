@@ -87,8 +87,8 @@ body {
 	-webkit-font-smoothing: subpixel-antialiased;
 	-moz-osx-font-smoothing: auto;
     color: var(--osnovnoy-tekst);
-    
 }
+body.lock{overflow: hidden;}
 p, h1, h2, h3,h4,ul,ol{
     margin: 0;
     padding: 0;

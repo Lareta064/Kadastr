@@ -16,44 +16,108 @@ block content
 	main.main-inner
 		section.bid-content
 			.container
-				.bid-content-header
+				.bid-header.border-bot
 					.fs-15.date-box 01.12.2025
-					.label-light В обработке 
+					.bid-state-block
+						.label.label-light#open-states-list
+							span В обработке
+							svg.svg-carret
+								use(href='./img/sprite.svg#svg-carret')
+						//DROP STATES LIST
+						.states-list#states-list
+							ul.drop-list
+								li.drop-list-item В обработке
+								li.drop-list-item Выезд на объект
+								li.drop-list-item Согласование
+								li.drop-list-item Формирование документов
+								li.drop-list-item Подача в Росреестр
+								li.drop-list-item Закрытие
+								li.drop-list-item Отказ
+				//bid list
+				.bid-content.gap-15.border-bot
+					h2.h2 Услуги
+					.bid-content-list.gap-15
+						//SERV ITEM
+						.bid-item
+							.bid-item-title.h-16 «Технический паспорт (для ресурсоснабжающих организаций)
+							
+							.bid-item-additional
+								.muted-15 Дополнительные услуги
+								ul.bid-additional-list
+									li.fs-15 Регистрация прав собственности и сделок в&nbsp;Росреестре
+									li.fs-15 Проведение геодезических и&nbsp;топографических съемок
+						//SERV ITEM
+						.bid-item
+							.bid-item-title.h-16 Межевой план
+							
+							.bid-item-additional
+								.muted-15 Дополнительные услуги
+								ul.bid-additional-list.fs-15
+									li Подготовка документов для регистрации прав собственности
 		
-		section.messages-content
+						//SERV ITEM
+						.bid-item
+							.bid-item-title.h-16 Консультация по документам
+		
+		
+		
+		//CONTACTS
+		section.customer-contacts
 			.container.gap-15
-				h2.h2 кекеке
-				.messages-content
+				h2.h2 Контактная информация
+				ul.contacts-list.gap-15
+					li.contacts-item
+						.contacts-item__icon
+							svg.svg-phone
+								use(href='./img/sprite.svg#svg-phone')
+						.contacts-item__txt
+							.fs-15.txt-muted Телефон
+							.fs-16 + 7 (123) 456-78-90
+					li.contacts-item
+						.contacts-item__icon
+							svg.svg-email
+								use(href='./img/sprite.svg#svg-email')
+						.contacts-item__txt
+							.fs-15.txt-muted E-mail
+							.fs-16 alex@domainname.ru
+					li.contacts-item
+						.contacts-item__icon
+							svg.svg-comment
+								use(href='./img/sprite.svg#svg-comment')
+						.contacts-item__txt
+							.fs-15.txt-muted Комментарий
+							.fs-16 Хотелось бы, чтобы заявка была выполнена в ближайшие 10 дней
+		//CHAT
+		section.messages
+			.container.gap-15
+				h2.h2 Обсуждение
+				.messages-content.gap-15
+					//USER
+					.message-wrapper
+						.message-item
+							.fs-13 Александp
+							.fs-15 Здравствуйте, подскажите пожалуйста в какие сроки эта заявка будет выполнена?
+						.message-info 
+							span 12:03 
+							span 01.12.25
+					//ADMIN
 					.message-wrapper.admin-message
 						.message-item
-							.fs-13 Александ
-							.fs-15 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+							.fs-13 Служба поддержки
+							.fs-15 Стандартные сроки на выполнение — 20 рабочих дней
 						.message-info 
 							span 12:03 
 							span 01.12.25
 					
+					//USER
 					.message-wrapper
 						.message-item
-							.fs-13 Александ
-							.fs-15 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+							.fs-13 Александp
+							.fs-15 А нельзя ли как-то ускорить процесс?
 						.message-info 
 							span 12:03 
 							span 01.12.25
-					.message-wrapper
-						.message-item
-							.fs-13 Александ
-							.fs-15 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-						.message-info 
-							span 12:03 
-							span 01.12.25
-					.message-wrapper.admin-message
-						.message-item
-							.fs-13 Александ
-							.fs-15 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-						.message-info 
-							span 12:03 
-							span 01.12.25
-				
+					
 			.send-message-wrapper
 				.send-message.container
 					.form-item-slim
