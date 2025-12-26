@@ -1,0 +1,21 @@
+.contacts-list{
+	
+	.contacts-item{
+		display: flex;
+		column-gap:12px;
+		.fs-15, .fs-16{line-height: 1.44;}
+	}
+	.contacts-item__icon{
+		width: 20px;
+		flex-shrink: 0;
+	}
+	.contacts-item__txt{
+		flex:1;
+		display: grid;
+	    grid-template-columns: 1fr;
+		gap:4px;
+		.fs-16{color: var(--zagolovok); }
+	}
+
+}
+.customer-contacts{padding-top: 25px;padding-bottom: 25px;}

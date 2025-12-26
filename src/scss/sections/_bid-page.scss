@@ -1,4 +1,4 @@
-.bid-content-header{
+.bid-header{
 	display: flex;
 	padding-bottom: 15px;
 	border-bottom: 1px solid #EBEDF5;;
@@ -16,32 +16,39 @@
 		width: 165px;
 	}
 }
-.bid-content{
-	padding-top: 15px;
+.bid{
+	.bid-content{
+		padding-block: 25px;
+	}
+	
 }
+
 .bid-item,.bid-item-additional,.bid-additional-list{
   display: grid;
   grid-template-columns: 1fr;
   gap:7px;
 }
 .bid-item-additional {padding-left: 11px;}
-.bid-item-additional .fs-15{color: var(--zagolovok);}
+.bid-item-additional .fs-15{color: var(--zagolovok); line-height: 1.44;}
 .bid-item{gap:11px;}
-.messages-content{
+.messages{
 	display: flex;
 	flex-direction: column;
 	row-gap: 15px;
 	background: var(--fon);
+	padding-top: 25px;
 }
+.messages-content{padding-bottom: 10px;}
 .message-wrapper{
 	margin-left: auto;
-	padding-right: 8px;
+	padding-right: 10px;
 	.message-info {
 		display: flex;
-	    column-gap:15px;
+	    column-gap:9px;
 		font-size: 12px;
 		line-height: 117%;
 		text-align: right;
+		padding-right: 1px;
 		color: var(--vtorostepennyy-tekst);
 		justify-content: flex-end;
 		span{width: max-content;}
@@ -51,19 +58,18 @@
 	padding: 20px 18px;
 	border-radius: 10px;
 	width: 280px;
-	
 	background: #dfe5ff;
 	position: relative;
-	margin-bottom: 8px;
+	margin-bottom: 3px;
 	&>*+*{margin-top: 5px;}
 	.fs-13{
-		line-height: 115%;
+		line-height: 1.15;
         color: var(--vtorostepennyy-tekst);
 
 	}
 	.fs-15{
 		font-size: 15px;
-		line-height: 140%;
+		line-height: 1.4;
 		color: var(--zagolovok);
 	}
 	&:after{
@@ -83,7 +89,7 @@
 	margin-left: 0;
 	margin-right: auto;
 	padding-right: 0;
-	padding-left: 8px;
+	padding-left: 10px;
 	.message-item{
 		
 		background: var(--belyy);
@@ -94,7 +100,7 @@
 			background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg width='8' height='17' viewBox='0 0 8 17' fill='none' xmlns='http://www.w3.org/2000/svg'%3e%3cpath d='M6.58928 6.83373C3.92811 5.66355 0.586785 3.52028 0 0V16.9985C0.595539 13.4257 4.02841 10.9167 6.70792 9.47152C7.60058 8.99006 7.51771 7.24198 6.58928 6.83373Z' fill='%23FFFFFF' /%3e%3c/svg%3e");
 		}
 	}
-	.message-info{justify-content: flex-start;}
+	.message-info{justify-content: flex-start; padding-right: 0;padding-left: 1px;}
 }
 .btn-send{
 	width: 50px;

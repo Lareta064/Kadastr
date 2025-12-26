@@ -20,6 +20,11 @@ html(lang="ru")
 
 		block content
 			.container-dashboard.custom-form(style="padding-top:80px;")
+				form(action="" method="method" placeholder="Поиск")
+					.form-item-slim
+						input.inp(type="text" name="inp_name")
+						button.search-button(type="submit")
+				br
 				.form-item
 					input.inp(type="text" name="inp_name")
 				pre.
