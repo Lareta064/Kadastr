@@ -1,0 +1,54 @@
+extends ../layouts/layout.pug
+
+block content
+	//HEADER
+	header.header.header-primary
+		.container
+			a.logo-group(href="index.html")
+				svg.svg-logo-icon
+					use(href='../img/sprite.svg#svg-logo-icon')
+				svg.svg-logo-txt
+					use(href='../img/sprite.svg#svg-logo-txt')
+
+			.header-title
+				.h-18 Заявка № 123456789
+	
+	//MAIN			
+	main.main-inner
+		section.bid-content
+			.container
+				.bid-content-header
+					.fs-15.date-box 01.12.2025
+					.label-light В обработке 
+		
+		section.bid-content
+			.container.gap-15
+				h2.h2 Услуги
+				.bid-content-list.gap-15
+					//SERV ITEM
+					.bid-item
+						.bid-item-title.h-16 «Технический паспорт (для ресурсоснабжающих организаций)
+						
+						.bid-item-additional
+							.muted-15 Дополнительные услуги
+							ul.bid-additional-list
+								li.fs-15 Регистрация прав собственности и сделок в&nbsp;Росреестре
+								li.fs-15 Проведение геодезических и&nbsp;топографических съемок
+					//SERV ITEM
+					.bid-item
+						.bid-item-title.h-16 Межевой план
+						
+						.bid-item-additional
+							.muted-15 Дополнительные услуги
+							ul.bid-additional-list.fs-15
+								li Регистрация прав собственности и сделок в&nbsp;Росреестре
+								li Проведение геодезических и&nbsp;топографических съемок
+	
+					//SERV ITEM
+					.bid-item
+						.bid-item-title.h-16 Консультация по документам
+	
+	
+	include ../sections/_footer-menu
+	
+	-var title = "Одна услуга";

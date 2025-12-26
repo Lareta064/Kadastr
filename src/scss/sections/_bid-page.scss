@@ -16,6 +16,17 @@
 		width: 165px;
 	}
 }
+.bid-content{
+	padding-top: 15px;
+}
+.bid-item,.bid-item-additional,.bid-additional-list{
+  display: grid;
+  grid-template-columns: 1fr;
+  gap:7px;
+}
+.bid-item-additional {padding-left: 11px;}
+.bid-item-additional .fs-15{color: var(--zagolovok);}
+.bid-item{gap:11px;}
 .messages-content{
 	display: flex;
 	flex-direction: column;
