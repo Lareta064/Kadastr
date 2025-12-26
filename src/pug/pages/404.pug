@@ -1,0 +1,24 @@
+extends ../layouts/layout.pug
+
+block content
+	.page-bg.page-content-404
+		main.main-inner
+			.container
+				a.logo-group.logo-group--primary(href="index.html")
+					svg.svg-logo-icon
+						use(href='./img/sprite.svg#svg-logo-icon')
+					svg.svg-logo-txt
+						use(href='./img/sprite.svg#svg-logo-txt')
+	
+		
+				.page-404-title
+					h1.h-29 ОШИБКА<br>404
+					.fs-18 Страница не найдена
+				
+				nav.nav-list
+					a.link(href="") Главная страница
+					a.link(href="") Услуги
+					a.link(href="") Обращения
+					a.link(href="") Корзина
+
+	-var title = "Упс...!";

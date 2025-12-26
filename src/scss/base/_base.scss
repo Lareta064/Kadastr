@@ -1,24 +1,4 @@
 @use '_var' as *;
-/*
-.promo(
-  style="
-    background-image: -webkit-image-set(
-      url('./img/bg.webp') 1x,
-      url('./img/bg@2x.webp') 2x
-    );
-    background-image: image-set(
-      url('./img/bg.webp') 1x,
-      url('./img/bg@2x.webp') 2x
-    );
-  "
-)
- @media (-webkit-min-device-pixel-ratio: 2), 
-(min-resolution: 192dpi) { 
-
-    .box{background:url('images/box-bg@2x.png') no-repeat top left;}
-}
- */
-
 
 @font-face {
   font-family: "Nunito Sans";
@@ -102,12 +82,15 @@ button{
     font-family: var(--font-family);
     &:focus{outline: none;}
 }
-.page-content{
-    display: flex;
-   flex-direction: column;
+.page-bg{
+   background: var(--fon);
    min-height: 100vh;
-   .header{width: 100%;flex-shrink: 0;}
-   main{width: 100%;flex-grow: 1;}
+}
+.page-content{
+	display: flex;
+	flex-direction: column;
+	.header{width: 100%;flex-shrink: 0;}
+	.main-inner{width: 100%;flex-grow:1;}
 }
 .container, .container-small{
     width: 100%;
