@@ -16,7 +16,14 @@
 		width: 165px;
 	}
 }
-
+.customer-data{
+	margin-top: 10px;
+	padding-left: 15px;
+	border-left: 1px solid var(--siniy);
+	display: grid;
+	grid-template-columns: 1fr;
+	gap:4px;
+}
 .bid-content{
 	padding-block: 25px;
 }
