@@ -17,13 +17,27 @@
 	}
 }
 .customer-data{
-	margin-top: 10px;
+	padding-top: 16px;
+	padding-bottom: 16px;
 	padding-left: 15px;
-	border-left: 1px solid var(--siniy);
 	display: grid;
 	grid-template-columns: 1fr;
-	gap:4px;
+	gap:3px;
+	position: relative;
+	border-top:1px solid #EBEDF5;
+	&:before{
+		content:'';
+		position: absolute;
+		top: 16px;
+		bottom: 16px;
+		width: 1px;
+		background: var(--siniy);
+	}
 }
+.customer-data:last-child{
+	border-bottom:1px solid #ccc;
+}
+
 .bid-content{
 	padding-block: 25px;
 }
