@@ -5,6 +5,9 @@ document.addEventListener('DOMContentLoaded', function(){
 	function activatePlaceholder(element, parent){
 		element.addEventListener('focus',()=>{
 			parent.classList.add('form-item--focus');
+			if(parent.classList.contains('error')){
+				parent.classList.remove('error');
+			}
 		});
 		element.addEventListener('blur',()=>{
 			if( element.value !==''){parent.classList.add('form-item--focus');}
@@ -60,6 +63,15 @@ document.addEventListener('DOMContentLoaded', function(){
 					statesList.style.height = statesList.scrollHeight +'px';
 					bodyEl.classList.add('lock');
 				}
+			});
+
+			const stateListItems = statesList.querySelectorAll('.drop-list-item');
+			stateListItems.forEach((item)=>{
+				item.addEventListener('click', ()=>{
+					openStateListBtn.classList.remove('active');
+					statesList.style.height = 0;
+					bodyEl.classList.remove('lock');
+				});
 			})
 		}
 	}

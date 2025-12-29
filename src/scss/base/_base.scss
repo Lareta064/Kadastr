@@ -3,7 +3,7 @@
 @font-face {
   font-family: "Nunito Sans";
   src: url("../fonts/NunitoSans.woff2") format("woff2");
-//   font-weight: 200 1000;
+
   font-style: normal;
   font-display: swap;
 }
@@ -13,24 +13,24 @@
     font-weight: 400;
     font-style: normal;
 }
-@font-face {
-    font-family: 'Inter';
-    src: url('../fonts/Inter-Medium.woff2') format('woff2');
-    font-weight: 500;
-    font-style: normal;
-}
-@font-face {
-    font-family: 'Inter';
-    src: url('../fonts/Inter-SemiBold.woff2') format('woff2');
-    font-weight: 600;
-    font-style: normal;
-}
-@font-face {
-    font-family: 'Inter';
-    src: url('../fonts/Inter-Bold.woff2') format('woff2');
-    font-weight: 700;
-    font-style: normal;
-}
+// @font-face {
+//     font-family: 'Inter';
+//     src: url('../fonts/Inter-Medium.woff2') format('woff2');
+//     font-weight: 500;
+//     font-style: normal;
+// }
+// @font-face {
+//     font-family: 'Inter';
+//     src: url('../fonts/Inter-SemiBold.woff2') format('woff2');
+//     font-weight: 600;
+//     font-style: normal;
+// }
+// @font-face {
+//     font-family: 'Inter';
+//     src: url('../fonts/Inter-Bold.woff2') format('woff2');
+//     font-weight: 700;
+//     font-style: normal;
+// }
 *, *:after, *:before {
 	box-sizing: border-box;
 	background-repeat: no-repeat;
@@ -51,7 +51,7 @@ html {scroll-behavior: smooth;}
 	--belyy: #fff;
 	--oshibka: #e34343;
     --font-family: 'Nunito Sans';
-    --second-family:'Inter';
+    // --second-family:'Inter';
 
     --container_Width: 575px;
     --container_padding_inline: 16px;
@@ -89,6 +89,7 @@ button{
 .page-content{
 	display: flex;
 	flex-direction: column;
+    min-height: 100vh;
 	.header{width: 100%;flex-shrink: 0;}
 	.main-inner{width: 100%;flex-grow:1;}
 }
@@ -99,7 +100,11 @@ button{
     margin: 0 auto;
 }
 .container-small{max-width: 390px;}
-
+.section-flex{
+    display: flex;
+    flex-direction: column;
+    &>*{width: 100%;}
+}
 .gap-15{
     display: grid;
    grid-template-columns: 1fr;

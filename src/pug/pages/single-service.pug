@@ -1,95 +1,95 @@
 extends ../layouts/layout.pug
 
 block content
-	
-	header.header.header-primary
-		.container
-			a.logo-group(href="index.html")
-				svg.svg-logo-icon
-					use(href='./img/sprite.svg#svg-logo-icon')
-				svg.svg-logo-txt
-					use(href='./img/sprite.svg#svg-logo-txt')
-
-			.header-title
-				.h-18 Технический паспорт
-				.fs-13 (для ресурсоснабжающих организаций)
-	main.main-inner
-		section.about-service
+	.page-content
+		header.header.header-primary
 			.container
-				.service-link
-					.service-link__icon
-						img(src='./img/tehnical-passport.webp', srcset='./img/tehnical-passport@2x.webp 2x' width='42' height='42' loading='lazy' alt='img')
-					.service-link__body
-						.service-link__text
-							.h-18 Технический паспорт является основным документом технического учета, формируемым по результатам технической инвентаризации объекта недвижимости
-						.price-item.fs-26 от 10 500 ₽
-						a.btn-primary(href="#!") Перейти
+				a.logo-group(href="index.html")
+					svg.svg-logo-icon
+						use(href='./img/sprite.svg#svg-logo-icon')
+					svg.svg-logo-txt
+						use(href='./img/sprite.svg#svg-logo-txt')
 
-				.about-service-text.fs-16
-					p Он содержит подробную информацию о состоянии и характеристиках здания или помещения, включая размер и площадь объекта, материал стен и перекрытий, сведения о коммуникациях (электричество, водоснабжение, отопление), описание конструктивных элементов объекта недвижимости, назначение объекта, размеры и площадь внутренних помещений, их расположение в здании и относительно друг друга, а также степень износа.
-				
-				//GALLERY
-				.gallery
-					h2.h2.mb-25 Галерея
-					.gallery-swiper
-						.gallery-swiper__content
-							.gallery-item
-								img(src='./img/gallery/1.webp', srcset='./img/gallery/1@2x.webp 2x' width='275' height='205' loading='lazy' alt='img')
-							.gallery-item
-								img(src='./img/gallery/2.webp', srcset='./img/gallery/2@2x.webp 2x' width='275' height='205' loading='lazy' alt='img')
-							.gallery-item
-								img(src='./img/gallery/3.webp', srcset='./img/gallery/3@2x.webp 2x' width='275' height='205' loading='lazy' alt='img')
-				
-				
-				.total-cost.total-cost--border
-					span.fs-18 Цена
-					span.h-27 10 500 ₽
-
-				.checkbox-list
-					.checkbox-list__title Дополнительные услуги
-					.checkbox-list__group
-						.checkbox-list-item
-							label.custom-item-label
-								input(type="checkbox" name="")
-								span.custom-checkbox
-								span Подготовка и оформление кадастровой документации
-							.price-item 1 000 ₽
-						
-						.checkbox-list-item
-							label.custom-item-label
-								input(type="checkbox" name="")
-								span.custom-checkbox
-								span Проведение геодезических и топографических съемок
-							.price-item 3 000 ₽
-						
-						.checkbox-list-item
-							label.custom-item-label
-								input(type="checkbox" name="")
-								span.custom-checkbox
-								span Регистрация прав собственности и сделок в&nbsp;Росреестре
-							.price-item 2 500 ₽
-			.button-wrapper
+				.header-title
+					.h-18 Технический паспорт
+					.fs-13 (для ресурсоснабжающих организаций)
+		main.main-inner
+			section.about-service
 				.container
-					a.btn-primary(href="#!" data-role="success-add") Добавить в корзину
-			
-			//popup
-			.popup-wrapper(data-popup="success-add")
-				.popup-content
-					button(type="button" aria-label="close" data-close).btn-cross
-						
-					.service-link.service-link--popup
+					.service-link
 						.service-link__icon
 							img(src='./img/tehnical-passport.webp', srcset='./img/tehnical-passport@2x.webp 2x' width='42' height='42' loading='lazy' alt='img')
 						.service-link__body
 							.service-link__text
-								.fs-15 Услуга
-								.h-18 Технический паспорт (для ресурсоснабжающих организаций)»
-								.fs-15 добавлена в корзину
-							
-							a.btn-primary(href="#!") Перейти в корзину
-							
-							button.link-border.fs-13(type="button" data-close) вернуться назад
+								.h-18 Технический паспорт является основным документом технического учета, формируемым по результатам технической инвентаризации объекта недвижимости
+							.price-item.fs-26 от 10 500 ₽
+							a.btn-primary(href="#!") Перейти
 
-	include ../sections/_footer-menu
-	
+					.about-service-text.fs-16
+						p Он содержит подробную информацию о состоянии и характеристиках здания или помещения, включая размер и площадь объекта, материал стен и перекрытий, сведения о коммуникациях (электричество, водоснабжение, отопление), описание конструктивных элементов объекта недвижимости, назначение объекта, размеры и площадь внутренних помещений, их расположение в здании и относительно друг друга, а также степень износа.
+					
+					//GALLERY
+					.gallery
+						h2.h2.mb-25 Галерея
+						.gallery-swiper
+							.gallery-swiper__content
+								.gallery-item
+									img(src='./img/gallery/1.webp', srcset='./img/gallery/1@2x.webp 2x' width='275' height='205' loading='lazy' alt='img')
+								.gallery-item
+									img(src='./img/gallery/2.webp', srcset='./img/gallery/2@2x.webp 2x' width='275' height='205' loading='lazy' alt='img')
+								.gallery-item
+									img(src='./img/gallery/3.webp', srcset='./img/gallery/3@2x.webp 2x' width='275' height='205' loading='lazy' alt='img')
+					
+					
+					.total-cost.total-cost--border
+						span.fs-18 Цена
+						span.h-27 10 500 ₽
+
+					.checkbox-list
+						.checkbox-list__title Дополнительные услуги
+						.checkbox-list__group
+							.checkbox-list-item
+								label.custom-item-label
+									input(type="checkbox" name="")
+									span.custom-checkbox
+									span Подготовка и оформление кадастровой документации
+								.price-item 1 000 ₽
+							
+							.checkbox-list-item
+								label.custom-item-label
+									input(type="checkbox" name="")
+									span.custom-checkbox
+									span Проведение геодезических и топографических съемок
+								.price-item 3 000 ₽
+							
+							.checkbox-list-item
+								label.custom-item-label
+									input(type="checkbox" name="")
+									span.custom-checkbox
+									span Регистрация прав собственности и сделок в&nbsp;Росреестре
+								.price-item 2 500 ₽
+				.button-wrapper
+					.container
+						a.btn-primary(href="#!" data-role="success-add") Добавить в корзину
+				
+				//popup
+				.popup-wrapper(data-popup="success-add")
+					.popup-content
+						button(type="button" aria-label="close" data-close).btn-cross
+							
+						.service-link.service-link--popup
+							.service-link__icon
+								img(src='./img/tehnical-passport.webp', srcset='./img/tehnical-passport@2x.webp 2x' width='42' height='42' loading='lazy' alt='img')
+							.service-link__body
+								.service-link__text
+									.fs-15 Услуга
+									.h-18 Технический паспорт (для ресурсоснабжающих организаций)»
+									.fs-15 добавлена в корзину
+								
+								a.btn-primary(href="#!") Перейти в корзину
+								
+								button.link-border.fs-13(type="button" data-close) вернуться назад
+
+		include ../sections/_footer-menu
+block variables
 	-var title = "Одна услуга";

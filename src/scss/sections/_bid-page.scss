@@ -51,6 +51,7 @@
 		color: var(--zagolovok);
 		padding:15px;
 		border-bottom:1px solid #EBEDF5;
+		cursor:pointer;
 	}
 	&-item:last-child{border-bottom:0}
 }

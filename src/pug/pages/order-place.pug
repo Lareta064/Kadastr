@@ -1,0 +1,62 @@
+extends ../layouts/layout.pug
+
+block content
+	.page-content
+		header.header.header-primary
+			.container
+				a.logo-group(href="#!")
+					svg.svg-logo-icon
+						use(href='./img/sprite.svg#svg-logo-icon')
+					svg.svg-logo-txt
+						use(href='./img/sprite.svg#svg-logo-txt')
+
+				.header-title
+					.h-18 Оформление заявки
+		main.main-inner
+			section.order-place
+				.container
+					form(action="" method="method")
+						.gap-15
+							//Что бы применились стили невалидного поля, диву .form-item и инпуту внутри него  добавить дополнительный класс  "error"
+							.form-item.form-item--special.error
+								input.inp.error(type="text" name="inp_name")
+								.inp-placeholder Имя *
+								p.error Поле не заполнено
+							
+							.form-item.form-item--special
+								input.inp(type="text" name="inp_name")
+								.inp-placeholder Фамилия *
+							.form-item.form-item--special
+								input.inp(type="text" name="inp_name")
+								.inp-placeholder Отчество *
+							.form-item.form-item--special
+								input.inp(type="text" name="inp_name")
+								.inp-placeholder Телефон *
+							.form-item.form-item--special
+								input.inp(type="text" name="inp_name")
+								.inp-placeholder E-mail
+							.form-item.form-item--special
+								textarea.textarea( name="message")
+								.inp-placeholder Message
+
+							.form-item.form-item--special
+								input.inp( type="text" name="promo")
+								.inp-placeholder Промокод
+						
+						//Что бы применились стили невалидного поля, диву .custom-item-label и инпуту внутри него  добавить дополнительный класс  "error"
+						.form-checkbox-group
+							label.custom-item-label.error
+								input.error(type="checkbox" name="")
+								span.custom-checkbox
+								span.fs-16 Принимаю #[a.link(href="#!") пользовательское соглашение]
+								p.error Необходимо принять пользовательское соглашение
+							label.custom-item-label
+								input(type="checkbox" name="")
+								span.custom-checkbox
+								span.fs-16 Соглашаюсь с #[a.link(href="#!") политикой обработки персональных данных]
+						.form-button.mt-20
+							button.btn-primary(type="submit") Оформить заявку
+
+		include ../sections/_footer-menu
+block variables
+	-var title = "Оформить заказ";

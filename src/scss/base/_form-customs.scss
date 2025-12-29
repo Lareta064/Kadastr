@@ -29,9 +29,19 @@
 		background-size: 13px 12px;
 		border: 2px solid var(--siniy);
 	}
+	
 	input.error[type="checkbox"] + span.custom-checkbox{
 		
 		border: 2px solid var(--oshibka);
+	}
+}
+.custom-item-label.error{
+	padding-bottom: 20px;
+	p.error, span.error{
+		display: block;
+		position: absolute;
+		bottom: 0;
+		left: 0;
 	}
 }
 
