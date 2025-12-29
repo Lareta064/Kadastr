@@ -2,51 +2,71 @@ extends ../layouts/layout.pug
 
 block content
 	.page-content
-		//HEADER
 		header.header.header-primary
 			.container
 				a.logo-group(href="index.html")
 					svg.svg-logo-icon
-						use(href='../img/sprite.svg#svg-logo-icon')
+						use(href='./img/sprite.svg#svg-logo-icon')
 					svg.svg-logo-txt
-						use(href='../img/sprite.svg#svg-logo-txt')
+						use(href='./img/sprite.svg#svg-logo-txt')
 
 				.header-title
 					.h-18 Заявка № 123456789
-		
-		//MAIN
+					
 		main.main-inner
-			section.bid
+			section.order-content
 				.container
-					.bid-header.border-bot
-						.fs-15.date-box 01.12.2025
-						.bid-state-block
-							.label.label-light В обработке
-							
-					.bid-content.gap-15.border-bot
+					.order-header.border-bot
+						.fs-15.date-box 05.12.2025
+						.order-state-block
+							.label.label-light#open-states-list
+								span В обработке
+								svg.svg-carret
+									use(href='./img/sprite.svg#svg-carret')
+							//DROP STATES LIST
+							.states-list#states-list
+								ul.drop-list
+									li.drop-list-item В обработке
+									li.drop-list-item Выезд на объект
+									li.drop-list-item Согласование
+									li.drop-list-item Формирование документов
+									li.drop-list-item Подача в Росреестр
+									li.drop-list-item Закрытие
+									li.drop-list-item Отказ
+					
+					.customer-data-wrapper
+						.customer-data.fs-15
+							.customer-name Александр Иванов
+							.customer-phone +7 (123) 123-45-67
+					
+					//order list
+					.order-content.gap-15.border-bot
 						h2.h2 Услуги
-						.bid-content-list.gap-15
+						.order-content-list.gap-15
 							//SERV ITEM
-							.bid-item
-								.bid-item-title.h-16 «Технический паспорт (для ресурсоснабжающих организаций)
+							.order-item
+								.order-item-title.h-16 «Технический паспорт (для ресурсоснабжающих организаций)
 								
-								.bid-item-additional
+								.order-item-additional
 									.muted-15 Дополнительные услуги
-									ul.bid-additional-list
+									ul.order-additional-list
 										li.fs-15 Регистрация прав собственности и сделок в&nbsp;Росреестре
 										li.fs-15 Проведение геодезических и&nbsp;топографических съемок
 							//SERV ITEM
-							.bid-item
-								.bid-item-title.h-16 Межевой план
+							.order-item
+								.order-item-title.h-16 Межевой план
 								
-								.bid-item-additional
+								.order-item-additional
 									.muted-15 Дополнительные услуги
-									ul.bid-additional-list.fs-15
+									ul.order-additional-list.fs-15
 										li Подготовка документов для регистрации прав собственности
 			
 							//SERV ITEM
-							.bid-item
-								.bid-item-title.h-16 Консультация по документам
+							.order-item
+								.order-item-title.h-16 Консультация по документам
+			
+			
+			
 			//CONTACTS
 			section.customer-contacts
 				.container.gap-15
@@ -109,6 +129,7 @@ block content
 						.form-item-slim
 							input.inp(type="text" placeholder="Сообщение")
 						button(type="button").btn-send
+			
 		
 		include ../sections/_footer-menu
 block variables

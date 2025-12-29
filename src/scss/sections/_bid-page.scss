@@ -1,4 +1,4 @@
-.bid-header{
+.order-header{
 	display: flex;
 	padding-bottom: 15px;
 	border-bottom: 1px solid #EBEDF5;;
@@ -38,10 +38,10 @@
 	border-bottom:1px solid #ccc;
 }
 
-.bid-content{
+.order-content{
 	padding-block: 25px;
 }
-.bid-state-block{
+.order-state-block{
 	position: relative;
 	.states-list{
 		position: absolute;
@@ -76,14 +76,14 @@
 	}
 	&-item:last-child{border-bottom:0}
 }
-.bid-item,.bid-item-additional,.bid-additional-list{
+.order-item,.order-item-additional,.order-additional-list{
   display: grid;
   grid-template-columns: 1fr;
   gap:7px;
 }
-.bid-item-additional {padding-left: 11px;}
-.bid-item-additional .fs-15{color: var(--zagolovok); line-height: 1.44;}
-.bid-item{gap:11px;}
+.order-item-additional {padding-left: 11px;}
+.order-item-additional .fs-15{color: var(--zagolovok); line-height: 1.44;}
+.order-item{gap:11px;}
 .messages{
 	display: flex;
 	flex-direction: column;
