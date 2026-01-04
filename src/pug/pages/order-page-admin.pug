@@ -14,30 +14,36 @@ block content
 					.h-18 Заявка № 123456789
 					
 		main.main-inner
-			section.order-content
+			section.order-page-admin
 				.container
-					.order-header.border-bot
-						.fs-15.date-box 05.12.2025
-						.order-state-block
-							.label.label-light#open-states-list
-								span В обработке
-								svg.svg-carret
-									use(href='./img/sprite.svg#svg-carret')
-							//DROP STATES LIST
-							.states-list#states-list
-								ul.drop-list
-									li.drop-list-item В обработке
-									li.drop-list-item Выезд на объект
-									li.drop-list-item Согласование
-									li.drop-list-item Формирование документов
-									li.drop-list-item Подача в Росреестр
-									li.drop-list-item Закрытие
-									li.drop-list-item Отказ
-					
-					.customer-data-wrapper
-						.customer-data.fs-15
+					.order-card.order-card--admin
+						.order-card__head
+							.order-card__info
+								.fs-13.txt-muted 01.12.2025
+							
+							.order-state-block
+								.label.label-light#open-states-list
+									span В обработке
+									svg.svg-carret
+										use(href='./img/sprite.svg#svg-carret')
+
+								//DROP STATES LIST
+								.states-list#states-list
+									ul.drop-list
+										li.drop-list-item В обработке
+										li.drop-list-item Выезд на объект
+										li.drop-list-item Согласование
+										li.drop-list-item Формирование документов
+										li.drop-list-item Подача в Росреестр
+										li.drop-list-item Закрытие
+										li.drop-list-item Отказ
+						.order-card__customer.fs-15
 							.customer-name Александр Иванов
 							.customer-phone +7 (123) 123-45-67
+					//- .customer-data-wrapper
+					//- 	.customer-data.fs-15
+					//- 		.customer-name Александр Иванов
+					//- 		.customer-phone +7 (123) 123-45-67
 					
 					//order list
 					.order-content.gap-15.border-bot
