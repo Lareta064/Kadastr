@@ -3,7 +3,7 @@
 	background: linear-gradient(180deg,rgba(237, 240, 255, 1) 0%, rgba(245, 247, 255, 1) 30%, rgba(255, 255, 255, 1) 100%);
 	padding-top: 36px;
 	padding-bottom: 20px;
-	height: 100vh;
+	height: 100dvh;
 	overflow: hidden;
 	display: flex;
 	.container-small{
@@ -90,4 +90,13 @@
   color: var(--zagolovok);
    font-weight: 500;
   caret-color: transparent;
+}
+@media(max-height: 580px){
+	.authorization-form .form-subtitle .h2{margin-top: 12px;}
+	.authorization-form .form-subtitle{row-gap:0;}
+	.form-checkbox-group{margin-top: 12px;}
+	.form-checkbox-group{margin-top: 12px;}
+	.authorization-form  span.fs-16{ font-size: 12px;}
+	.authorization-form .custom-checkbox-label .custom-checkbox {width: 20px;
+	height: 20px;}
 }

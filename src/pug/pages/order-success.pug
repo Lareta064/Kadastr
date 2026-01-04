@@ -1,0 +1,28 @@
+extends ../layouts/layout.pug
+
+block content
+	.page-content
+		header.header.header-primary
+			.container
+				a.logo-group(href="#!")
+					svg.svg-logo-icon
+						use(href='./img/sprite.svg#svg-logo-icon')
+					svg.svg-logo-txt
+						use(href='./img/sprite.svg#svg-logo-txt')
+
+				.header-title
+					.h-18 Ваша заявка принята
+		main.main-inner
+			section.order-success
+				.container
+					.order-success-content
+						.order-success-icon
+						.order-success__txt
+							.h-18 Номер вашей заявки
+							.h-30 123456
+						
+						button.btn-primary(type="submit") Оформить заявку
+
+		include ../sections/_footer-menu
+block variables
+	-var title = "Оформить заказ";
